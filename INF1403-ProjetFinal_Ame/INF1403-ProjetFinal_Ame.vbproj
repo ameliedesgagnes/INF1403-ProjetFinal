@@ -73,10 +73,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Contrat.Designer.vb">
-      <DependentUpon>Contrat.vb</DependentUpon>
+    <Compile Include="NouveauContrat.Designer.vb">
+      <DependentUpon>NouveauContrat.vb</DependentUpon>
     </Compile>
-    <Compile Include="Contrat.vb">
+    <Compile Include="NouveauContrat.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ContratsClient.vb">
@@ -104,8 +104,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Contrat.resx">
-      <DependentUpon>Contrat.vb</DependentUpon>
+    <EmbeddedResource Include="NouveauContrat.resx">
+      <DependentUpon>NouveauContrat.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ContratsClient.resx">
       <DependentUpon>ContratsClient.vb</DependentUpon>
