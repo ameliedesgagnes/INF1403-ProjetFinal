@@ -1,4 +1,4 @@
-﻿Public Class Form1
+﻿Public Class LoginScreen
     Dim signUpMode As Boolean = False
 
     Dim credentials = {{"username", "password"}}

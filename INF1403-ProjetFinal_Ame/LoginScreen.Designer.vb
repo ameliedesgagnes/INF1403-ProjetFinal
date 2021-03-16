@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class LoginScreen
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -280,8 +280,8 @@ Partial Class Form1
         Me.Controls.Add(Me.pnl_NewUser)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Pnl_Inscription)
-        Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Name = "LoginScreen"
+        Me.Text = "LoginScreen"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.pnl_NewUser.ResumeLayout(False)
