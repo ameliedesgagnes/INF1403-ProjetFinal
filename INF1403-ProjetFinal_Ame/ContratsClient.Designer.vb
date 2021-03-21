@@ -23,6 +23,7 @@ Partial Class ContratsClient
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.MnItem_MonProfil = New System.Windows.Forms.ToolStripMenuItem()
         Me.Mn_navig = New System.Windows.Forms.MenuStrip()
@@ -40,11 +41,9 @@ Partial Class ContratsClient
         Me.LbDateFin = New System.Windows.Forms.Label()
         Me.LbDateDebut = New System.Windows.Forms.Label()
         Me.LbCodeClient = New System.Windows.Forms.Label()
-        Me.TxtBoxIdContrat = New System.Windows.Forms.TextBox()
-        Me.TxtBoxCodeClient = New System.Windows.Forms.TextBox()
-        Me.TxtBoxDateDebut = New System.Windows.Forms.TextBox()
-        Me.TxtBoxDateFin = New System.Windows.Forms.TextBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.IdContrat = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CodeClient = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Mn_navig.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -77,7 +76,7 @@ Partial Class ContratsClient
         Me.Mn_navig.Name = "Mn_navig"
         Me.Mn_navig.Padding = New System.Windows.Forms.Padding(9, 7, 9, 9)
         Me.Mn_navig.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.Mn_navig.Size = New System.Drawing.Size(995, 40)
+        Me.Mn_navig.Size = New System.Drawing.Size(595, 40)
         Me.Mn_navig.TabIndex = 1
         Me.Mn_navig.Text = "MenuStrip1"
         '
@@ -131,7 +130,7 @@ Partial Class ContratsClient
         '
         'Btn_NouveauContrat
         '
-        Me.Btn_NouveauContrat.Location = New System.Drawing.Point(470, 140)
+        Me.Btn_NouveauContrat.Location = New System.Drawing.Point(40, 140)
         Me.Btn_NouveauContrat.Name = "Btn_NouveauContrat"
         Me.Btn_NouveauContrat.Size = New System.Drawing.Size(132, 40)
         Me.Btn_NouveauContrat.TabIndex = 3
@@ -140,7 +139,7 @@ Partial Class ContratsClient
         '
         'Btn_Modifier
         '
-        Me.Btn_Modifier.Location = New System.Drawing.Point(636, 140)
+        Me.Btn_Modifier.Location = New System.Drawing.Point(218, 140)
         Me.Btn_Modifier.Name = "Btn_Modifier"
         Me.Btn_Modifier.Size = New System.Drawing.Size(129, 40)
         Me.Btn_Modifier.TabIndex = 6
@@ -149,7 +148,7 @@ Partial Class ContratsClient
         '
         'Btn_Resilier
         '
-        Me.Btn_Resilier.Location = New System.Drawing.Point(798, 140)
+        Me.Btn_Resilier.Location = New System.Drawing.Point(388, 140)
         Me.Btn_Resilier.Name = "Btn_Resilier"
         Me.Btn_Resilier.Size = New System.Drawing.Size(127, 40)
         Me.Btn_Resilier.TabIndex = 7
@@ -162,9 +161,8 @@ Partial Class ContratsClient
         Me.LbIdContrat.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LbIdContrat.Location = New System.Drawing.Point(59, 149)
         Me.LbIdContrat.Name = "LbIdContrat"
-        Me.LbIdContrat.Size = New System.Drawing.Size(83, 20)
+        Me.LbIdContrat.Size = New System.Drawing.Size(0, 20)
         Me.LbIdContrat.TabIndex = 9
-        Me.LbIdContrat.Text = "ID Contrat"
         '
         'LbDateFin
         '
@@ -172,9 +170,8 @@ Partial Class ContratsClient
         Me.LbDateFin.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LbDateFin.Location = New System.Drawing.Point(59, 373)
         Me.LbDateFin.Name = "LbDateFin"
-        Me.LbDateFin.Size = New System.Drawing.Size(70, 20)
+        Me.LbDateFin.Size = New System.Drawing.Size(0, 20)
         Me.LbDateFin.TabIndex = 10
-        Me.LbDateFin.Text = "Date Fin"
         '
         'LbDateDebut
         '
@@ -182,9 +179,8 @@ Partial Class ContratsClient
         Me.LbDateDebut.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LbDateDebut.Location = New System.Drawing.Point(59, 294)
         Me.LbDateDebut.Name = "LbDateDebut"
-        Me.LbDateDebut.Size = New System.Drawing.Size(92, 20)
+        Me.LbDateDebut.Size = New System.Drawing.Size(0, 20)
         Me.LbDateDebut.TabIndex = 11
-        Me.LbDateDebut.Text = "Date Début"
         '
         'LbCodeClient
         '
@@ -192,56 +188,48 @@ Partial Class ContratsClient
         Me.LbCodeClient.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LbCodeClient.Location = New System.Drawing.Point(59, 221)
         Me.LbCodeClient.Name = "LbCodeClient"
-        Me.LbCodeClient.Size = New System.Drawing.Size(91, 20)
+        Me.LbCodeClient.Size = New System.Drawing.Size(0, 20)
         Me.LbCodeClient.TabIndex = 12
-        Me.LbCodeClient.Text = "Code Client"
-        '
-        'TxtBoxIdContrat
-        '
-        Me.TxtBoxIdContrat.Location = New System.Drawing.Point(175, 151)
-        Me.TxtBoxIdContrat.Name = "TxtBoxIdContrat"
-        Me.TxtBoxIdContrat.Size = New System.Drawing.Size(191, 20)
-        Me.TxtBoxIdContrat.TabIndex = 13
-        '
-        'TxtBoxCodeClient
-        '
-        Me.TxtBoxCodeClient.Location = New System.Drawing.Point(175, 223)
-        Me.TxtBoxCodeClient.Name = "TxtBoxCodeClient"
-        Me.TxtBoxCodeClient.Size = New System.Drawing.Size(191, 20)
-        Me.TxtBoxCodeClient.TabIndex = 14
-        '
-        'TxtBoxDateDebut
-        '
-        Me.TxtBoxDateDebut.Location = New System.Drawing.Point(175, 294)
-        Me.TxtBoxDateDebut.Name = "TxtBoxDateDebut"
-        Me.TxtBoxDateDebut.Size = New System.Drawing.Size(191, 20)
-        Me.TxtBoxDateDebut.TabIndex = 15
-        '
-        'TxtBoxDateFin
-        '
-        Me.TxtBoxDateFin.Location = New System.Drawing.Point(175, 373)
-        Me.TxtBoxDateFin.Name = "TxtBoxDateFin"
-        Me.TxtBoxDateFin.Size = New System.Drawing.Size(191, 20)
-        Me.TxtBoxDateFin.TabIndex = 16
         '
         'DataGridView1
         '
+        Me.DataGridView1.AllowDrop = True
+        Me.DataGridView1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(461, 209)
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IdContrat, Me.CodeClient})
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle1
+        Me.DataGridView1.Location = New System.Drawing.Point(40, 235)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(475, 209)
         Me.DataGridView1.TabIndex = 17
+        '
+        'IdContrat
+        '
+        Me.IdContrat.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.IdContrat.HeaderText = "Id Contrat"
+        Me.IdContrat.Name = "IdContrat"
+        '
+        'CodeClient
+        '
+        Me.CodeClient.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.CodeClient.HeaderText = "Code Client"
+        Me.CodeClient.Name = "CodeClient"
         '
         'ContratsClient
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(995, 475)
+        Me.ClientSize = New System.Drawing.Size(595, 478)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Controls.Add(Me.TxtBoxDateFin)
-        Me.Controls.Add(Me.TxtBoxDateDebut)
-        Me.Controls.Add(Me.TxtBoxCodeClient)
-        Me.Controls.Add(Me.TxtBoxIdContrat)
         Me.Controls.Add(Me.LbCodeClient)
         Me.Controls.Add(Me.LbDateDebut)
         Me.Controls.Add(Me.LbDateFin)
@@ -279,9 +267,7 @@ Partial Class ContratsClient
     Friend WithEvents LbDateFin As Label
     Friend WithEvents LbDateDebut As Label
     Friend WithEvents LbCodeClient As Label
-    Friend WithEvents TxtBoxIdContrat As TextBox
-    Friend WithEvents TxtBoxCodeClient As TextBox
-    Friend WithEvents TxtBoxDateDebut As TextBox
-    Friend WithEvents TxtBoxDateFin As TextBox
     Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents IdContrat As DataGridViewTextBoxColumn
+    Friend WithEvents CodeClient As DataGridViewTextBoxColumn
 End Class
