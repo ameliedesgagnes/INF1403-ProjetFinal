@@ -35,7 +35,7 @@ Partial Class NouveauContrat
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TextBoxCodeClient = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.TexboxID = New System.Windows.Forms.TextBox()
+        Me.TextboxID = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.LabelTotalMois = New System.Windows.Forms.Label()
@@ -68,7 +68,7 @@ Partial Class NouveauContrat
         '
         Me.ComboBoxForfait.FormattingEnabled = True
         Me.ComboBoxForfait.Location = New System.Drawing.Point(191, 112)
-        Me.ComboBoxForfait.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ComboBoxForfait.Margin = New System.Windows.Forms.Padding(2)
         Me.ComboBoxForfait.Name = "ComboBoxForfait"
         Me.ComboBoxForfait.Size = New System.Drawing.Size(111, 21)
         Me.ComboBoxForfait.TabIndex = 3
@@ -77,7 +77,7 @@ Partial Class NouveauContrat
         '
         Me.ComboBoxLocation.FormattingEnabled = True
         Me.ComboBoxLocation.Location = New System.Drawing.Point(191, 166)
-        Me.ComboBoxLocation.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ComboBoxLocation.Margin = New System.Windows.Forms.Padding(2)
         Me.ComboBoxLocation.Name = "ComboBoxLocation"
         Me.ComboBoxLocation.Size = New System.Drawing.Size(111, 21)
         Me.ComboBoxLocation.TabIndex = 4
@@ -85,7 +85,7 @@ Partial Class NouveauContrat
         'Btn_ajouter
         '
         Me.Btn_ajouter.Location = New System.Drawing.Point(68, 487)
-        Me.Btn_ajouter.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Btn_ajouter.Margin = New System.Windows.Forms.Padding(2)
         Me.Btn_ajouter.Name = "Btn_ajouter"
         Me.Btn_ajouter.Size = New System.Drawing.Size(224, 36)
         Me.Btn_ajouter.TabIndex = 5
@@ -106,7 +106,7 @@ Partial Class NouveauContrat
         '
         Me.ComboBoxDurée.FormattingEnabled = True
         Me.ComboBoxDurée.Location = New System.Drawing.Point(191, 215)
-        Me.ComboBoxDurée.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ComboBoxDurée.Margin = New System.Windows.Forms.Padding(2)
         Me.ComboBoxDurée.Name = "ComboBoxDurée"
         Me.ComboBoxDurée.Size = New System.Drawing.Size(111, 21)
         Me.ComboBoxDurée.TabIndex = 7
@@ -115,7 +115,7 @@ Partial Class NouveauContrat
         '
         Me.CheckBoxAnnuel.AutoSize = True
         Me.CheckBoxAnnuel.Location = New System.Drawing.Point(191, 336)
-        Me.CheckBoxAnnuel.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.CheckBoxAnnuel.Margin = New System.Windows.Forms.Padding(2)
         Me.CheckBoxAnnuel.Name = "CheckBoxAnnuel"
         Me.CheckBoxAnnuel.Size = New System.Drawing.Size(59, 17)
         Me.CheckBoxAnnuel.TabIndex = 19
@@ -126,7 +126,7 @@ Partial Class NouveauContrat
         '
         Me.CheckBoxMensuel.AutoSize = True
         Me.CheckBoxMensuel.Location = New System.Drawing.Point(65, 336)
-        Me.CheckBoxMensuel.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.CheckBoxMensuel.Margin = New System.Windows.Forms.Padding(2)
         Me.CheckBoxMensuel.Name = "CheckBoxMensuel"
         Me.CheckBoxMensuel.Size = New System.Drawing.Size(66, 17)
         Me.CheckBoxMensuel.TabIndex = 18
@@ -137,7 +137,7 @@ Partial Class NouveauContrat
         '
         Me.ComboBoxPaiement.FormattingEnabled = True
         Me.ComboBoxPaiement.Location = New System.Drawing.Point(191, 274)
-        Me.ComboBoxPaiement.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ComboBoxPaiement.Margin = New System.Windows.Forms.Padding(2)
         Me.ComboBoxPaiement.Name = "ComboBoxPaiement"
         Me.ComboBoxPaiement.Size = New System.Drawing.Size(111, 21)
         Me.ComboBoxPaiement.TabIndex = 17
@@ -155,7 +155,7 @@ Partial Class NouveauContrat
         'TextBoxCodeClient
         '
         Me.TextBoxCodeClient.Location = New System.Drawing.Point(191, 57)
-        Me.TextBoxCodeClient.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBoxCodeClient.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBoxCodeClient.Name = "TextBoxCodeClient"
         Me.TextBoxCodeClient.Size = New System.Drawing.Size(92, 20)
         Me.TextBoxCodeClient.TabIndex = 11
@@ -170,14 +170,14 @@ Partial Class NouveauContrat
         Me.Label7.TabIndex = 10
         Me.Label7.Text = "Code client"
         '
-        'TexboxID
+        'TextboxID
         '
-        Me.TexboxID.CausesValidation = False
-        Me.TexboxID.Location = New System.Drawing.Point(191, 29)
-        Me.TexboxID.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.TexboxID.Name = "TexboxID"
-        Me.TexboxID.Size = New System.Drawing.Size(92, 20)
-        Me.TexboxID.TabIndex = 21
+        Me.TextboxID.CausesValidation = False
+        Me.TextboxID.Location = New System.Drawing.Point(191, 29)
+        Me.TextboxID.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextboxID.Name = "TextboxID"
+        Me.TextboxID.Size = New System.Drawing.Size(92, 20)
+        Me.TextboxID.TabIndex = 21
         '
         'Label8
         '
@@ -249,7 +249,7 @@ Partial Class NouveauContrat
         Me.Controls.Add(Me.LabelTotalAnnée)
         Me.Controls.Add(Me.LabelTotalMois)
         Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.TexboxID)
+        Me.Controls.Add(Me.TextboxID)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.CheckBoxAnnuel)
         Me.Controls.Add(Me.CheckBoxMensuel)
@@ -264,7 +264,7 @@ Partial Class NouveauContrat
         Me.Controls.Add(Me.ComboBoxForfait)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "NouveauContrat"
         Me.Text = "Info contrat"
         Me.ResumeLayout(False)
@@ -284,7 +284,7 @@ Partial Class NouveauContrat
     Friend WithEvents Label1 As Label
     Friend WithEvents TextBoxCodeClient As TextBox
     Friend WithEvents Label7 As Label
-    Friend WithEvents TexboxID As TextBox
+    Friend WithEvents TextboxID As TextBox
     Friend WithEvents Label8 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents LabelTotalMois As Label
