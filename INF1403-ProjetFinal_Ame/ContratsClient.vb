@@ -57,6 +57,7 @@
             MessageBox.Show("Veuillez sélectionner un contrat et réappuyer sur le bouton Résilier")
         End If
 
+
     End Sub
 
 
