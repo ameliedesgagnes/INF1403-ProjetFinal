@@ -145,11 +145,11 @@ Partial Class NouveauContrat
         '
         'TextboxID
         '
-        Me.TexboxID.CausesValidation = False
-        Me.TexboxID.Location = New System.Drawing.Point(281, 45)
-        Me.TexboxID.Name = "TexboxID"
-        Me.TexboxID.Size = New System.Drawing.Size(251, 26)
-        Me.TexboxID.TabIndex = 21
+        Me.TextboxID.CausesValidation = False
+        Me.TextboxID.Location = New System.Drawing.Point(281, 45)
+        Me.TextboxID.Name = "TexboxID"
+        Me.TextboxID.Size = New System.Drawing.Size(251, 26)
+        Me.TextboxID.TabIndex = 21
         '
         'Label8
         '
