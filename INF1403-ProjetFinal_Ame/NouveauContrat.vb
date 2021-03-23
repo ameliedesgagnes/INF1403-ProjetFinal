@@ -1,5 +1,4 @@
 ﻿Imports System.ComponentModel
-
 Public Class NouveauContrat
 
 
@@ -46,10 +45,11 @@ Public Class NouveauContrat
 
     Private Sub Btn_ajouter_Click(sender As Object, e As EventArgs) Handles Btn_ajouter.Click
 
-        ContratsClient.DataGridView1.Rows.Add(TexboxID.Text, TextBoxCodeClient.Text)
-
+        ContratsClient.DataGridView1.Rows.Add(TextboxID.Text, TextBoxCodeClient.Text)
+        ContratsClient.setIDs(TextboxID.Text, TextBoxCodeClient.Text)
         Me.Close()
         ContratsClient.Show()
+
     End Sub
 
     Private Sub Label14_Click(sender As Object, e As EventArgs) Handles ComboBoxForfait.SelectedIndexChanged

@@ -1,4 +1,4 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class NouveauContrat
     Inherits System.Windows.Forms.Form
 
@@ -33,7 +33,7 @@ Partial Class NouveauContrat
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TextBoxCodeClient = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.TexboxID = New System.Windows.Forms.TextBox()
+        Me.TextboxID = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.LabelTotalMois = New System.Windows.Forms.Label()
@@ -143,7 +143,7 @@ Partial Class NouveauContrat
         Me.Label7.TabIndex = 10
         Me.Label7.Text = "Code client"
         '
-        'TexboxID
+        'TextboxID
         '
         Me.TexboxID.CausesValidation = False
         Me.TexboxID.Location = New System.Drawing.Point(281, 45)
@@ -295,7 +295,7 @@ Partial Class NouveauContrat
         Me.Controls.Add(Me.LabelTotalAnnée)
         Me.Controls.Add(Me.LabelTotalMois)
         Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.TexboxID)
+        Me.Controls.Add(Me.TextboxID)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.ComboBoxPaiement)
         Me.Controls.Add(Me.Label1)
@@ -325,7 +325,7 @@ Partial Class NouveauContrat
     Friend WithEvents Label1 As Label
     Friend WithEvents TextBoxCodeClient As TextBox
     Friend WithEvents Label7 As Label
-    Friend WithEvents TexboxID As TextBox
+    Friend WithEvents TextboxID As TextBox
     Friend WithEvents Label8 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents LabelTotalMois As Label
