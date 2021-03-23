@@ -46,7 +46,7 @@
 
     Private Sub Btn_Resilier_Click(sender As Object, e As EventArgs) Handles Btn_Resilier.Click
 
-        If (DataGridView1.Rows(0).Cells(0).Selected = True) Then
+        If (DataGridView1.SelectedRows(0).Cells(0).Selected = True) Then
 
             Select Case MsgBox("Êtes-vous certain de vouloir supprimer le contrat sélectionné?", MsgBoxStyle.YesNo, "Attention!")
                 Case MsgBoxResult.Yes
