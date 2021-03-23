@@ -3,27 +3,32 @@
 Public Class NouveauContrat
 
 
-    Private Sub ComboBoxForfait_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBoxForfait.SelectedIndexChanged
+    Private Sub ComboBoxForfait_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBoxForfait.Click
         ComboBoxForfait.Items.Clear()
-        ComboBoxForfait.Items.Add("Sûreté")
-        ComboBoxForfait.Items.Add("Sécurité")
-        ComboBoxForfait.Items.Add("Bonne Santé")
-        ComboBoxForfait.Items.Add("Education")
+        ComboBoxForfait.Items.Add("Basse vitesse")
+        ComboBoxForfait.Items.Add("Moyenne vitesse")
+        ComboBoxForfait.Items.Add("Haute vitesse")
+        ComboBoxForfait.Items.Add("Vitesse Entreprise")
 
     End Sub
 
     'TODO: Jamais mettre d'accent dans les variable'
-    Private Sub ComboBoxDurée_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBoxDurée.SelectedIndexChanged
-        ComboBoxDurée.Items.Clear()
-        ComboBoxDurée.Items.Add("1 Semaine")
-        ComboBoxDurée.Items.Add("2 Semaine")
-        ComboBoxDurée.Items.Add("1 Mois")
-        ComboBoxDurée.Items.Add("6 Mois")
-        ComboBoxDurée.Items.Add("1 An")
+    Private Sub ComboBoxDuree_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBoxDuree.Click
+        ComboBoxDuree.Items.Clear()
+        ComboBoxDuree.Items.Add("Aucune location sélectionnée")
+
+        If ComboBoxLocation.Text = "Modem" Or ComboBoxLocation.Text = "Micro PC" Then
+            ComboBoxDuree.Items.Remove("Aucune location sélectionnée")
+            ComboBoxDuree.Items.Add("1 Semaine")
+            ComboBoxDuree.Items.Add("2 Semaine")
+            ComboBoxDuree.Items.Add("1 Mois")
+            ComboBoxDuree.Items.Add("6 Mois")
+            ComboBoxDuree.Items.Add("1 An")
+        End If
 
     End Sub
 
-    Private Sub ComboBoxPaiement_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBoxPaiement.SelectedIndexChanged
+    Private Sub ComboBoxPaiement_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBoxPaiement.Click
         ComboBoxPaiement.Items.Clear()
         ComboBoxPaiement.Items.Add("Carte de crédit")
         ComboBoxPaiement.Items.Add("Carte débit")
@@ -31,8 +36,9 @@ Public Class NouveauContrat
 
     End Sub
 
-    Private Sub ComboBoxLocation_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBoxLocation.SelectedIndexChanged
+    Private Sub ComboBoxLocation_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBoxLocation.Click
         ComboBoxLocation.Items.Clear()
+        ComboBoxLocation.Items.Add("Aucune location")
         ComboBoxLocation.Items.Add("Modem")
         ComboBoxLocation.Items.Add("Micro PC")
 
@@ -46,5 +52,37 @@ Public Class NouveauContrat
         ContratsClient.Show()
     End Sub
 
+    Private Sub Label14_Click(sender As Object, e As EventArgs) Handles ComboBoxForfait.SelectedIndexChanged
+        If ComboBoxForfait.Text = "Basse vitesse" Then
+            Label14.Text = "30$"
+        ElseIf ComboBoxForfait.Text = "Moyenne vitesse" Then
+            Label14.Text = "60$"
+        ElseIf ComboBoxForfait.Text = "Haute vitesse" Then
+            Label14.Text = "90$"
+        ElseIf ComboBoxForfait.Text = "Vitesse Entreprise" Then
+            Label14.Text = "200$"
+        End If
+
+    End Sub
+
+    Private Sub Label13_Click(sender As Object, e As EventArgs) Handles ComboBoxForfait.SelectedIndexChanged
+        If ComboBoxForfait.Text = "Basse vitesse" Then
+            Label13.Text = "360$"
+        ElseIf ComboBoxForfait.Text = "Moyenne vitesse" Then
+            Label13.Text = "720$"
+        ElseIf ComboBoxForfait.Text = "Haute vitesse" Then
+            Label13.Text = "1 080$"
+        ElseIf ComboBoxForfait.Text = "Vitesse Entreprise" Then
+            Label13.Text = "2 400$"
+        End If
+    End Sub
+
+    Private Sub ButtonCancel_Click(sender As Object, e As EventArgs) Handles ButtonCancel.Click
+        Me.Hide()
+        ContratsClient.Show()
+    End Sub
+    Private Sub frmNouveauContrat(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Disposed
+        ContratsClient.Show()
+    End Sub
 
 End Class
