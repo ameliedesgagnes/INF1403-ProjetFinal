@@ -1,6 +1,18 @@
 ﻿Imports System.ComponentModel
 Public Class NouveauContrat
 
+    Private modeConfig As Boolean = False
+
+
+    Public Sub changeMode()
+        modeConfig = Not modeConfig
+        If modeConfig = True Then
+            Btn_ajouter.Text = "Modifier"
+        Else
+            Btn_ajouter.Text = "Ajouter le contrat"
+        End If
+    End Sub
+
 
     Private Sub ComboBoxForfait_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBoxForfait.Click
         ComboBoxForfait.Items.Clear()
@@ -45,10 +57,19 @@ Public Class NouveauContrat
 
     Private Sub Btn_ajouter_Click(sender As Object, e As EventArgs) Handles Btn_ajouter.Click
 
-        ContratsClient.DataGridView1.Rows.Add(TextboxID.Text, TextBoxCodeClient.Text)
-        ContratsClient.setIDs(TextboxID.Text, TextBoxCodeClient.Text)
-        Me.Close()
-        ContratsClient.Show()
+        If modeConfig = True Then
+            ContratsClient.DataGridView1.SelectedRows(0).Cells(0).Value = TextboxID.Text
+            ContratsClient.DataGridView1.SelectedRows(0).Cells(1).Value = TextBoxCodeClient.Text
+            Me.Close()
+            ContratsClient.Show()
+        Else
+            ContratsClient.DataGridView1.Rows.Add(TextboxID.Text, TextBoxCodeClient.Text)
+            ContratsClient.setIDs(TextboxID.Text, TextBoxCodeClient.Text)
+            Me.Close()
+            ContratsClient.Show()
+        End If
+
+
 
     End Sub
 
