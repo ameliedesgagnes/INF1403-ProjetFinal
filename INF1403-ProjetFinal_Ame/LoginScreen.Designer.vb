@@ -23,7 +23,7 @@ Partial Class LoginScreen
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.txtfld_Username = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtfld_Password = New System.Windows.Forms.TextBox()
         Me.btn_Connect = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
@@ -36,14 +36,14 @@ Partial Class LoginScreen
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Pnl_Inscription = New System.Windows.Forms.Panel()
+        Me.btn_Annuler = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.txtfld_NewPassCnf = New System.Windows.Forms.TextBox()
+        Me.txtfld_NewPass = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtfld_NewUser = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.btn_Annuler = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.pnl_NewUser.SuspendLayout()
         Me.Pnl_Inscription.SuspendLayout()
@@ -56,12 +56,12 @@ Partial Class LoginScreen
         Me.txtfld_Username.Size = New System.Drawing.Size(168, 20)
         Me.txtfld_Username.TabIndex = 0
         '
-        'TextBox2
+        'txtfld_Password
         '
-        Me.TextBox2.Location = New System.Drawing.Point(138, 111)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(168, 20)
-        Me.TextBox2.TabIndex = 1
+        Me.txtfld_Password.Location = New System.Drawing.Point(138, 111)
+        Me.txtfld_Password.Name = "txtfld_Password"
+        Me.txtfld_Password.Size = New System.Drawing.Size(168, 20)
+        Me.txtfld_Password.TabIndex = 1
         '
         'btn_Connect
         '
@@ -81,7 +81,7 @@ Partial Class LoginScreen
         Me.Panel1.Controls.Add(Me.lbl_Username)
         Me.Panel1.Controls.Add(Me.txtfld_Username)
         Me.Panel1.Controls.Add(Me.btn_Connect)
-        Me.Panel1.Controls.Add(Me.TextBox2)
+        Me.Panel1.Controls.Add(Me.txtfld_Password)
         Me.Panel1.Location = New System.Drawing.Point(31, 96)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(358, 281)
@@ -189,16 +189,26 @@ Partial Class LoginScreen
         Me.Pnl_Inscription.Controls.Add(Me.btn_Annuler)
         Me.Pnl_Inscription.Controls.Add(Me.Button2)
         Me.Pnl_Inscription.Controls.Add(Me.Label5)
-        Me.Pnl_Inscription.Controls.Add(Me.TextBox4)
-        Me.Pnl_Inscription.Controls.Add(Me.TextBox3)
+        Me.Pnl_Inscription.Controls.Add(Me.txtfld_NewPassCnf)
+        Me.Pnl_Inscription.Controls.Add(Me.txtfld_NewPass)
         Me.Pnl_Inscription.Controls.Add(Me.Label4)
-        Me.Pnl_Inscription.Controls.Add(Me.TextBox1)
+        Me.Pnl_Inscription.Controls.Add(Me.txtfld_NewUser)
         Me.Pnl_Inscription.Controls.Add(Me.Label3)
         Me.Pnl_Inscription.Location = New System.Drawing.Point(408, 29)
         Me.Pnl_Inscription.Name = "Pnl_Inscription"
         Me.Pnl_Inscription.Size = New System.Drawing.Size(358, 348)
         Me.Pnl_Inscription.TabIndex = 6
         Me.Pnl_Inscription.Visible = False
+        '
+        'btn_Annuler
+        '
+        Me.btn_Annuler.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_Annuler.Location = New System.Drawing.Point(37, 278)
+        Me.btn_Annuler.Name = "btn_Annuler"
+        Me.btn_Annuler.Size = New System.Drawing.Size(117, 35)
+        Me.btn_Annuler.TabIndex = 12
+        Me.btn_Annuler.Text = "Annuler"
+        Me.btn_Annuler.UseVisualStyleBackColor = True
         '
         'Button2
         '
@@ -220,19 +230,19 @@ Partial Class LoginScreen
         Me.Label5.TabIndex = 10
         Me.Label5.Text = "(saisir à nouveau)"
         '
-        'TextBox4
+        'txtfld_NewPassCnf
         '
-        Me.TextBox4.Location = New System.Drawing.Point(160, 114)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(168, 20)
-        Me.TextBox4.TabIndex = 9
+        Me.txtfld_NewPassCnf.Location = New System.Drawing.Point(160, 114)
+        Me.txtfld_NewPassCnf.Name = "txtfld_NewPassCnf"
+        Me.txtfld_NewPassCnf.Size = New System.Drawing.Size(168, 20)
+        Me.txtfld_NewPassCnf.TabIndex = 9
         '
-        'TextBox3
+        'txtfld_NewPass
         '
-        Me.TextBox3.Location = New System.Drawing.Point(160, 70)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(168, 20)
-        Me.TextBox3.TabIndex = 8
+        Me.txtfld_NewPass.Location = New System.Drawing.Point(160, 70)
+        Me.txtfld_NewPass.Name = "txtfld_NewPass"
+        Me.txtfld_NewPass.Size = New System.Drawing.Size(168, 20)
+        Me.txtfld_NewPass.TabIndex = 8
         '
         'Label4
         '
@@ -244,12 +254,12 @@ Partial Class LoginScreen
         Me.Label4.TabIndex = 6
         Me.Label4.Text = "Mot de passe"
         '
-        'TextBox1
+        'txtfld_NewUser
         '
-        Me.TextBox1.Location = New System.Drawing.Point(160, 28)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(168, 20)
-        Me.TextBox1.TabIndex = 7
+        Me.txtfld_NewUser.Location = New System.Drawing.Point(160, 28)
+        Me.txtfld_NewUser.Name = "txtfld_NewUser"
+        Me.txtfld_NewUser.Size = New System.Drawing.Size(168, 20)
+        Me.txtfld_NewUser.TabIndex = 7
         '
         'Label3
         '
@@ -261,17 +271,7 @@ Partial Class LoginScreen
         Me.Label3.TabIndex = 6
         Me.Label3.Text = "Nom d'utilisateur"
         '
-        'btn_Annuler
-        '
-        Me.btn_Annuler.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_Annuler.Location = New System.Drawing.Point(37, 278)
-        Me.btn_Annuler.Name = "btn_Annuler"
-        Me.btn_Annuler.Size = New System.Drawing.Size(117, 35)
-        Me.btn_Annuler.TabIndex = 12
-        Me.btn_Annuler.Text = "Annuler"
-        Me.btn_Annuler.UseVisualStyleBackColor = True
-        '
-        'Form1
+        'LoginScreen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -293,7 +293,7 @@ Partial Class LoginScreen
     End Sub
 
     Friend WithEvents txtfld_Username As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txtfld_Password As TextBox
     Friend WithEvents btn_Connect As Button
     Friend WithEvents Panel1 As Panel
     Friend WithEvents lbl_Password As Label
@@ -307,10 +307,10 @@ Partial Class LoginScreen
     Friend WithEvents LinkLabel2 As LinkLabel
     Friend WithEvents Pnl_Inscription As Panel
     Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents txtfld_NewPassCnf As TextBox
+    Friend WithEvents txtfld_NewPass As TextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtfld_NewUser As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Button2 As Button
     Friend WithEvents btn_Annuler As Button

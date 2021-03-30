@@ -23,7 +23,6 @@
             pnl_NewUser.Visible = True
             Pnl_Inscription.Visible = False
             signUpMode = False
-            MsgBox(credentials(0, 1))
 
         End If
 
@@ -32,8 +31,44 @@
     Private Sub btn_Connect_Click(sender As Object, e As EventArgs) Handles btn_Connect.Click
 
 
-        Me.Hide()
-        PortailClient.Show()
+
+        For i = 0 To credentials.GetLength(0) - 1
+            If txtfld_Username.Text = credentials(i, 0) Then
+                If txtfld_Password.Text = credentials(i, 1) Then
+                End If
+            End If
+        Next i
+
+        MsgBox("Informations saisies incorrectes.")
+
+                    End
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        If txtfld_NewUser.Text <> "" Then
+            If txtfld_NewPass.Text <> "" Then
+                If txtfld_NewPassCnf.Text = txtfld_NewPass.Text Then
+
+                    Dim len = credentials.GetLength(0)
+                    Dim newArray(len, len) As String
+
+
+                    For i = 0 To credentials.GetLength(0) - 1
+                        newArray(i, 0) = credentials(i, 0)
+                        newArray(i, 1) = credentials(i, 1)
+                    Next i
+                    newArray(len, 0) = txtfld_NewUser.Text
+                    newArray(len, 1) = txtfld_NewPass.Text
+                    credentials = newArray
+
+                    MsgBox("Nouvel utilisateur créé!")
+
+                End If
+
+            End If
+
+        End If
+
 
     End Sub
 End Class
