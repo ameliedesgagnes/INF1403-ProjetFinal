@@ -20,5 +20,8 @@
         MessageBox.Show("Option à venir")
     End Sub
 
-
+    Private Sub DéconnexionToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DéconnexionToolStripMenuItem.Click
+        Me.Hide()
+        LoginScreen.Show()
+    End Sub
 End Class
