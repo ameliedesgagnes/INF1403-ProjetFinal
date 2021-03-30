@@ -31,5 +31,9 @@
 
     Private Sub btn_Connect_Click(sender As Object, e As EventArgs) Handles btn_Connect.Click
 
+
+        Me.Hide()
+        PortailClient.Show()
+
     End Sub
 End Class
