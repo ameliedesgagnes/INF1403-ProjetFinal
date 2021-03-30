@@ -35,13 +35,16 @@
         For i = 0 To credentials.GetLength(0) - 1
             If txtfld_Username.Text = credentials(i, 0) Then
                 If txtfld_Password.Text = credentials(i, 1) Then
+                    Me.Hide()
+                    PortailClient.Show()
+                    Exit Sub
                 End If
             End If
         Next i
 
         MsgBox("Informations saisies incorrectes.")
 
-                    End
+
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
