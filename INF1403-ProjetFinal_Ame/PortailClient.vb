@@ -8,6 +8,8 @@
 
     Private Sub Btn_ClientMesContrats_Click(sender As Object, e As EventArgs) Handles Btn_ClientMesContrats.Click
         'Ouvre la form ContratClients de Amelie (pour le client)
+        Me.Hide()
+        ContratsClient.Show()
     End Sub
 
 

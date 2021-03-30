@@ -71,6 +71,8 @@
 
     End Sub
 
-
-
+    Private Sub Fleche_Lb_Click(sender As Object, e As EventArgs) Handles Fleche_Lb.Click
+        Me.Hide()
+        PortailClient.Show()
+    End Sub
 End Class
