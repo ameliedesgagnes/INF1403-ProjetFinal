@@ -58,12 +58,12 @@ Public Class NouveauContrat
     Private Sub Btn_ajouter_Click(sender As Object, e As EventArgs) Handles Btn_ajouter.Click
 
         If modeConfig = True Then
-            ContratsClient.DataGridView1.SelectedRows(0).Cells(0).Value = TextboxID.Text
-            ContratsClient.DataGridView1.SelectedRows(0).Cells(1).Value = TextBoxCodeClient.Text
+            ContratsClient.TableauDonnees.SelectedRows(0).Cells(0).Value = TextboxID.Text
+            ContratsClient.TableauDonnees.SelectedRows(0).Cells(1).Value = TextBoxCodeClient.Text
             Me.Close()
             ContratsClient.Show()
         Else
-            ContratsClient.DataGridView1.Rows.Add(TextboxID.Text, TextBoxCodeClient.Text)
+            ContratsClient.TableauDonnees.Rows.Add(TextboxID.Text, TextBoxCodeClient.Text)
             ContratsClient.setIDs(TextboxID.Text, TextBoxCodeClient.Text)
             Me.Close()
             ContratsClient.Show()

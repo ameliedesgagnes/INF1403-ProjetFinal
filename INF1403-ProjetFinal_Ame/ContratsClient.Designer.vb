@@ -23,7 +23,7 @@ Partial Class ContratsClient
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.MnItem_MonProfil = New System.Windows.Forms.ToolStripMenuItem()
         Me.Mn_navig = New System.Windows.Forms.MenuStrip()
@@ -41,12 +41,12 @@ Partial Class ContratsClient
         Me.LbDateFin = New System.Windows.Forms.Label()
         Me.LbDateDebut = New System.Windows.Forms.Label()
         Me.LbCodeClient = New System.Windows.Forms.Label()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.TableauDonnees = New System.Windows.Forms.DataGridView()
         Me.IdContrat = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.CodeClient = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Fleche_Lb = New System.Windows.Forms.Label()
         Me.Mn_navig.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TableauDonnees, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ContextMenuStrip1
@@ -194,28 +194,28 @@ Partial Class ContratsClient
         Me.LbCodeClient.Size = New System.Drawing.Size(0, 20)
         Me.LbCodeClient.TabIndex = 12
         '
-        'DataGridView1
+        'TableauDonnees
         '
-        Me.DataGridView1.AllowDrop = True
-        Me.DataGridView1.AllowUserToAddRows = False
-        Me.DataGridView1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.TableauDonnees.AllowDrop = True
+        Me.TableauDonnees.AllowUserToAddRows = False
+        Me.TableauDonnees.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IdContrat, Me.CodeClient})
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle2
-        Me.DataGridView1.Location = New System.Drawing.Point(40, 235)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowHeadersWidth = 51
-        Me.DataGridView1.Size = New System.Drawing.Size(475, 209)
-        Me.DataGridView1.TabIndex = 17
+        Me.TableauDonnees.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.TableauDonnees.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IdContrat, Me.CodeClient})
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.TableauDonnees.DefaultCellStyle = DataGridViewCellStyle1
+        Me.TableauDonnees.Location = New System.Drawing.Point(40, 235)
+        Me.TableauDonnees.Name = "TableauDonnees"
+        Me.TableauDonnees.RowHeadersWidth = 51
+        Me.TableauDonnees.Size = New System.Drawing.Size(475, 209)
+        Me.TableauDonnees.TabIndex = 17
         '
         'IdContrat
         '
@@ -249,7 +249,7 @@ Partial Class ContratsClient
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(595, 478)
         Me.Controls.Add(Me.Fleche_Lb)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.TableauDonnees)
         Me.Controls.Add(Me.LbCodeClient)
         Me.Controls.Add(Me.LbDateDebut)
         Me.Controls.Add(Me.LbDateFin)
@@ -264,7 +264,7 @@ Partial Class ContratsClient
         Me.Text = "Form1"
         Me.Mn_navig.ResumeLayout(False)
         Me.Mn_navig.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TableauDonnees, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -287,7 +287,7 @@ Partial Class ContratsClient
     Friend WithEvents LbDateFin As Label
     Friend WithEvents LbDateDebut As Label
     Friend WithEvents LbCodeClient As Label
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents TableauDonnees As DataGridView
     Friend WithEvents IdContrat As DataGridViewTextBoxColumn
     Friend WithEvents CodeClient As DataGridViewTextBoxColumn
     Friend WithEvents Fleche_Lb As Label
