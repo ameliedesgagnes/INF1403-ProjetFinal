@@ -75,26 +75,26 @@ Public Class NouveauContrat
 
     Private Sub Label14_Click(sender As Object, e As EventArgs) Handles ComboBoxForfait.SelectedIndexChanged
         If ComboBoxForfait.Text = "Basse vitesse" Then
-            Label14.Text = "30$"
+            Lb_totalMoisResultat.Text = "30$"
         ElseIf ComboBoxForfait.Text = "Moyenne vitesse" Then
-            Label14.Text = "60$"
+            Lb_totalMoisResultat.Text = "60$"
         ElseIf ComboBoxForfait.Text = "Haute vitesse" Then
-            Label14.Text = "90$"
+            Lb_totalMoisResultat.Text = "90$"
         ElseIf ComboBoxForfait.Text = "Vitesse Entreprise" Then
-            Label14.Text = "200$"
+            Lb_totalMoisResultat.Text = "200$"
         End If
 
     End Sub
 
     Private Sub Label13_Click(sender As Object, e As EventArgs) Handles ComboBoxForfait.SelectedIndexChanged
         If ComboBoxForfait.Text = "Basse vitesse" Then
-            Label13.Text = "360$"
+            Lb_TotalAnneeResultat.Text = "360$"
         ElseIf ComboBoxForfait.Text = "Moyenne vitesse" Then
-            Label13.Text = "720$"
+            Lb_TotalAnneeResultat.Text = "720$"
         ElseIf ComboBoxForfait.Text = "Haute vitesse" Then
-            Label13.Text = "1 080$"
+            Lb_TotalAnneeResultat.Text = "1 080$"
         ElseIf ComboBoxForfait.Text = "Vitesse Entreprise" Then
-            Label13.Text = "2 400$"
+            Lb_TotalAnneeResultat.Text = "2 400$"
         End If
     End Sub
 
