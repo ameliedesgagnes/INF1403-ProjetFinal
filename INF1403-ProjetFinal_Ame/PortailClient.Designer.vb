@@ -26,7 +26,8 @@ Partial Class PortailClient
         Me.Btn_ClientMesContrats = New System.Windows.Forms.Button()
         Me.Btn_RecuImpot = New System.Windows.Forms.Button()
         Me.Lb_Titre = New System.Windows.Forms.Label()
-        Me.Mn_navig = New System.Windows.Forms.MenuStrip()
+        Me.MenuStripPortailClient = New System.Windows.Forms.MenuStrip()
+        Me.DéconnexionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MnItem_MonProfil = New System.Windows.Forms.ToolStripMenuItem()
         Me.MnItem_Aide = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContentsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -34,16 +35,16 @@ Partial Class PortailClient
         Me.SearchToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.toolStripSeparator5 = New System.Windows.Forms.ToolStripSeparator()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.DéconnexionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Mn_navig.SuspendLayout()
+        Me.MenuStripPortailClient.SuspendLayout()
         Me.SuspendLayout()
         '
         'Btn_ClientNouvelleLocation
         '
         Me.Btn_ClientNouvelleLocation.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_ClientNouvelleLocation.Location = New System.Drawing.Point(148, 254)
+        Me.Btn_ClientNouvelleLocation.Location = New System.Drawing.Point(132, 203)
+        Me.Btn_ClientNouvelleLocation.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn_ClientNouvelleLocation.Name = "Btn_ClientNouvelleLocation"
-        Me.Btn_ClientNouvelleLocation.Size = New System.Drawing.Size(246, 115)
+        Me.Btn_ClientNouvelleLocation.Size = New System.Drawing.Size(219, 92)
         Me.Btn_ClientNouvelleLocation.TabIndex = 0
         Me.Btn_ClientNouvelleLocation.Text = "Nouvelle Location"
         Me.Btn_ClientNouvelleLocation.UseVisualStyleBackColor = True
@@ -51,9 +52,10 @@ Partial Class PortailClient
         'Btn_ClientMesContrats
         '
         Me.Btn_ClientMesContrats.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_ClientMesContrats.Location = New System.Drawing.Point(459, 254)
+        Me.Btn_ClientMesContrats.Location = New System.Drawing.Point(408, 203)
+        Me.Btn_ClientMesContrats.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn_ClientMesContrats.Name = "Btn_ClientMesContrats"
-        Me.Btn_ClientMesContrats.Size = New System.Drawing.Size(246, 115)
+        Me.Btn_ClientMesContrats.Size = New System.Drawing.Size(219, 92)
         Me.Btn_ClientMesContrats.TabIndex = 1
         Me.Btn_ClientMesContrats.Text = "Mes contrats"
         Me.Btn_ClientMesContrats.UseVisualStyleBackColor = True
@@ -61,9 +63,10 @@ Partial Class PortailClient
         'Btn_RecuImpot
         '
         Me.Btn_RecuImpot.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Btn_RecuImpot.Location = New System.Drawing.Point(770, 254)
+        Me.Btn_RecuImpot.Location = New System.Drawing.Point(684, 203)
+        Me.Btn_RecuImpot.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Btn_RecuImpot.Name = "Btn_RecuImpot"
-        Me.Btn_RecuImpot.Size = New System.Drawing.Size(246, 115)
+        Me.Btn_RecuImpot.Size = New System.Drawing.Size(219, 92)
         Me.Btn_RecuImpot.TabIndex = 2
         Me.Btn_RecuImpot.Text = "Mes reçus d'impôt"
         Me.Btn_RecuImpot.UseVisualStyleBackColor = True
@@ -72,27 +75,33 @@ Partial Class PortailClient
         '
         Me.Lb_Titre.AutoSize = True
         Me.Lb_Titre.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold)
-        Me.Lb_Titre.Location = New System.Drawing.Point(141, 114)
+        Me.Lb_Titre.Location = New System.Drawing.Point(125, 91)
         Me.Lb_Titre.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Lb_Titre.Name = "Lb_Titre"
-        Me.Lb_Titre.Size = New System.Drawing.Size(215, 45)
+        Me.Lb_Titre.Size = New System.Drawing.Size(186, 37)
         Me.Lb_Titre.TabIndex = 3
         Me.Lb_Titre.Text = "Portail Client"
         '
-        'Mn_navig
+        'MenuStripPortailClient
         '
-        Me.Mn_navig.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Mn_navig.Font = New System.Drawing.Font("Segoe UI", 11.25!)
-        Me.Mn_navig.GripMargin = New System.Windows.Forms.Padding(2, 2, 0, 2)
-        Me.Mn_navig.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.Mn_navig.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DéconnexionToolStripMenuItem, Me.MnItem_MonProfil, Me.MnItem_Aide})
-        Me.Mn_navig.Location = New System.Drawing.Point(0, 0)
-        Me.Mn_navig.Name = "Mn_navig"
-        Me.Mn_navig.Padding = New System.Windows.Forms.Padding(14, 11, 14, 14)
-        Me.Mn_navig.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.Mn_navig.Size = New System.Drawing.Size(1191, 60)
-        Me.Mn_navig.TabIndex = 4
-        Me.Mn_navig.Text = "MenuStrip1"
+        Me.MenuStripPortailClient.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.MenuStripPortailClient.Font = New System.Drawing.Font("Segoe UI", 11.25!)
+        Me.MenuStripPortailClient.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.MenuStripPortailClient.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DéconnexionToolStripMenuItem, Me.MnItem_MonProfil, Me.MnItem_Aide})
+        Me.MenuStripPortailClient.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStripPortailClient.Name = "MenuStripPortailClient"
+        Me.MenuStripPortailClient.Padding = New System.Windows.Forms.Padding(12, 9, 12, 11)
+        Me.MenuStripPortailClient.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.MenuStripPortailClient.Size = New System.Drawing.Size(1059, 49)
+        Me.MenuStripPortailClient.TabIndex = 4
+        Me.MenuStripPortailClient.Text = "MenuStripPortailClient"
+        '
+        'DéconnexionToolStripMenuItem
+        '
+        Me.DéconnexionToolStripMenuItem.ForeColor = System.Drawing.Color.Snow
+        Me.DéconnexionToolStripMenuItem.Name = "DéconnexionToolStripMenuItem"
+        Me.DéconnexionToolStripMenuItem.Size = New System.Drawing.Size(137, 29)
+        Me.DéconnexionToolStripMenuItem.Text = "Déconnexion"
         '
         'MnItem_MonProfil
         '
@@ -101,7 +110,7 @@ Partial Class PortailClient
         Me.MnItem_MonProfil.Name = "MnItem_MonProfil"
         Me.MnItem_MonProfil.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.MnItem_MonProfil.RightToLeftAutoMirrorImage = True
-        Me.MnItem_MonProfil.Size = New System.Drawing.Size(146, 35)
+        Me.MnItem_MonProfil.Size = New System.Drawing.Size(122, 29)
         Me.MnItem_MonProfil.Text = "Mon Profil"
         '
         'MnItem_Aide
@@ -110,59 +119,53 @@ Partial Class PortailClient
         Me.MnItem_Aide.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold)
         Me.MnItem_Aide.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.MnItem_Aide.Name = "MnItem_Aide"
-        Me.MnItem_Aide.Size = New System.Drawing.Size(79, 35)
+        Me.MnItem_Aide.Size = New System.Drawing.Size(66, 29)
         Me.MnItem_Aide.Text = "&Aide"
         '
         'ContentsToolStripMenuItem
         '
         Me.ContentsToolStripMenuItem.Name = "ContentsToolStripMenuItem"
-        Me.ContentsToolStripMenuItem.Size = New System.Drawing.Size(214, 40)
+        Me.ContentsToolStripMenuItem.Size = New System.Drawing.Size(178, 30)
         Me.ContentsToolStripMenuItem.Text = "&Contents"
         '
         'IndexToolStripMenuItem
         '
         Me.IndexToolStripMenuItem.Name = "IndexToolStripMenuItem"
-        Me.IndexToolStripMenuItem.Size = New System.Drawing.Size(214, 40)
+        Me.IndexToolStripMenuItem.Size = New System.Drawing.Size(178, 30)
         Me.IndexToolStripMenuItem.Text = "&Index"
         '
         'SearchToolStripMenuItem
         '
         Me.SearchToolStripMenuItem.Name = "SearchToolStripMenuItem"
-        Me.SearchToolStripMenuItem.Size = New System.Drawing.Size(214, 40)
+        Me.SearchToolStripMenuItem.Size = New System.Drawing.Size(178, 30)
         Me.SearchToolStripMenuItem.Text = "&Search"
         '
         'toolStripSeparator5
         '
         Me.toolStripSeparator5.Name = "toolStripSeparator5"
-        Me.toolStripSeparator5.Size = New System.Drawing.Size(211, 6)
+        Me.toolStripSeparator5.Size = New System.Drawing.Size(175, 6)
         '
         'AboutToolStripMenuItem
         '
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(214, 40)
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(178, 30)
         Me.AboutToolStripMenuItem.Text = "&About..."
-        '
-        'DéconnexionToolStripMenuItem
-        '
-        Me.DéconnexionToolStripMenuItem.ForeColor = System.Drawing.Color.Snow
-        Me.DéconnexionToolStripMenuItem.Name = "DéconnexionToolStripMenuItem"
-        Me.DéconnexionToolStripMenuItem.Size = New System.Drawing.Size(163, 35)
-        Me.DéconnexionToolStripMenuItem.Text = "Déconnexion"
         '
         'PortailClient
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1191, 545)
-        Me.Controls.Add(Me.Mn_navig)
+        Me.ClientSize = New System.Drawing.Size(1059, 436)
+        Me.Controls.Add(Me.MenuStripPortailClient)
         Me.Controls.Add(Me.Lb_Titre)
         Me.Controls.Add(Me.Btn_RecuImpot)
         Me.Controls.Add(Me.Btn_ClientMesContrats)
         Me.Controls.Add(Me.Btn_ClientNouvelleLocation)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "PortailClient"
         Me.Text = "PortailClient"
-        Me.Mn_navig.ResumeLayout(False)
-        Me.Mn_navig.PerformLayout()
+        Me.MenuStripPortailClient.ResumeLayout(False)
+        Me.MenuStripPortailClient.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -172,7 +175,7 @@ Partial Class PortailClient
     Friend WithEvents Btn_ClientMesContrats As Button
     Friend WithEvents Btn_RecuImpot As Button
     Friend WithEvents Lb_Titre As Label
-    Friend WithEvents Mn_navig As MenuStrip
+    Friend WithEvents MenuStripPortailClient As MenuStrip
     Friend WithEvents MnItem_MonProfil As ToolStripMenuItem
     Friend WithEvents MnItem_Aide As ToolStripMenuItem
     Friend WithEvents ContentsToolStripMenuItem As ToolStripMenuItem

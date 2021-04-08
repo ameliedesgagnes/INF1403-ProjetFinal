@@ -30,4 +30,15 @@
 
 
 
+    Private Sub MnItem_MonProfil_Click(sender As Object, e As EventArgs) Handles MnItem_MonProfil.Click
+        Me.Hide()
+        ProfilEmploye.Show()
+    End Sub
+
+    Private Sub DéconnexionToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DéconnexionToolStripMenuItem.Click
+        Me.Hide()
+        LoginScreen.Show()
+    End Sub
+
+
 End Class

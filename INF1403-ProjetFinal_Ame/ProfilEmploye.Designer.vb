@@ -29,6 +29,16 @@ Partial Class ProfilEmploye
         Me.Lb_MonProfilEmploye = New System.Windows.Forms.Label()
         Me.Btn_ChangerInfoEmploye = New System.Windows.Forms.Button()
         Me.Btn_ChangerMDPEmploye = New System.Windows.Forms.Button()
+        Me.MenuStripProfilEmploye = New System.Windows.Forms.MenuStrip()
+        Me.DéconnexionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MnItem_MonPortail = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MnItem_Aide = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ContentsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.IndexToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SearchToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.toolStripSeparator5 = New System.Windows.Forms.ToolStripSeparator()
+        Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuStripProfilEmploye.SuspendLayout()
         Me.SuspendLayout()
         '
         'Lb_CellEmploye
@@ -101,11 +111,81 @@ Partial Class ProfilEmploye
         Me.Btn_ChangerMDPEmploye.Text = "Changer le mot de passe"
         Me.Btn_ChangerMDPEmploye.UseVisualStyleBackColor = True
         '
+        'MenuStripProfilEmploye
+        '
+        Me.MenuStripProfilEmploye.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.MenuStripProfilEmploye.Font = New System.Drawing.Font("Segoe UI", 11.25!)
+        Me.MenuStripProfilEmploye.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.MenuStripProfilEmploye.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DéconnexionToolStripMenuItem, Me.MnItem_MonPortail, Me.MnItem_Aide})
+        Me.MenuStripProfilEmploye.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStripProfilEmploye.Name = "MenuStripProfilEmploye"
+        Me.MenuStripProfilEmploye.Padding = New System.Windows.Forms.Padding(12, 9, 12, 11)
+        Me.MenuStripProfilEmploye.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.MenuStripProfilEmploye.Size = New System.Drawing.Size(1327, 49)
+        Me.MenuStripProfilEmploye.TabIndex = 17
+        Me.MenuStripProfilEmploye.Text = "MenuStripProfilEmployer"
+        '
+        'DéconnexionToolStripMenuItem
+        '
+        Me.DéconnexionToolStripMenuItem.ForeColor = System.Drawing.Color.Snow
+        Me.DéconnexionToolStripMenuItem.Name = "DéconnexionToolStripMenuItem"
+        Me.DéconnexionToolStripMenuItem.Size = New System.Drawing.Size(137, 29)
+        Me.DéconnexionToolStripMenuItem.Text = "Déconnexion"
+        '
+        'MnItem_MonPortail
+        '
+        Me.MnItem_MonPortail.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold)
+        Me.MnItem_MonPortail.ForeColor = System.Drawing.Color.Snow
+        Me.MnItem_MonPortail.Name = "MnItem_MonPortail"
+        Me.MnItem_MonPortail.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.MnItem_MonPortail.RightToLeftAutoMirrorImage = True
+        Me.MnItem_MonPortail.Size = New System.Drawing.Size(132, 29)
+        Me.MnItem_MonPortail.Text = "Mon Portail"
+        '
+        'MnItem_Aide
+        '
+        Me.MnItem_Aide.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ContentsToolStripMenuItem, Me.IndexToolStripMenuItem, Me.SearchToolStripMenuItem, Me.toolStripSeparator5, Me.AboutToolStripMenuItem})
+        Me.MnItem_Aide.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold)
+        Me.MnItem_Aide.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.MnItem_Aide.Name = "MnItem_Aide"
+        Me.MnItem_Aide.Size = New System.Drawing.Size(66, 29)
+        Me.MnItem_Aide.Text = "&Aide"
+        '
+        'ContentsToolStripMenuItem
+        '
+        Me.ContentsToolStripMenuItem.Name = "ContentsToolStripMenuItem"
+        Me.ContentsToolStripMenuItem.Size = New System.Drawing.Size(178, 30)
+        Me.ContentsToolStripMenuItem.Text = "&Contents"
+        '
+        'IndexToolStripMenuItem
+        '
+        Me.IndexToolStripMenuItem.Name = "IndexToolStripMenuItem"
+        Me.IndexToolStripMenuItem.Size = New System.Drawing.Size(178, 30)
+        Me.IndexToolStripMenuItem.Text = "&Index"
+        '
+        'SearchToolStripMenuItem
+        '
+        Me.SearchToolStripMenuItem.Name = "SearchToolStripMenuItem"
+        Me.SearchToolStripMenuItem.Size = New System.Drawing.Size(178, 30)
+        Me.SearchToolStripMenuItem.Text = "&Search"
+        '
+        'toolStripSeparator5
+        '
+        Me.toolStripSeparator5.Name = "toolStripSeparator5"
+        Me.toolStripSeparator5.Size = New System.Drawing.Size(175, 6)
+        '
+        'AboutToolStripMenuItem
+        '
+        Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(178, 30)
+        Me.AboutToolStripMenuItem.Text = "&About..."
+        '
         'ProfilEmploye
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1327, 553)
+        Me.Controls.Add(Me.MenuStripProfilEmploye)
         Me.Controls.Add(Me.Btn_ChangerMDPEmploye)
         Me.Controls.Add(Me.Lb_CellEmploye)
         Me.Controls.Add(Me.Lb_NomEmploye)
@@ -115,6 +195,8 @@ Partial Class ProfilEmploye
         Me.Controls.Add(Me.Btn_ChangerInfoEmploye)
         Me.Name = "ProfilEmploye"
         Me.Text = "ProfilEmploye"
+        Me.MenuStripProfilEmploye.ResumeLayout(False)
+        Me.MenuStripProfilEmploye.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -126,4 +208,13 @@ Partial Class ProfilEmploye
     Friend WithEvents Lb_MonProfilEmploye As Label
     Friend WithEvents Btn_ChangerInfoEmploye As Button
     Friend WithEvents Btn_ChangerMDPEmploye As Button
+    Friend WithEvents MenuStripProfilEmploye As MenuStrip
+    Friend WithEvents DéconnexionToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents MnItem_MonPortail As ToolStripMenuItem
+    Friend WithEvents MnItem_Aide As ToolStripMenuItem
+    Friend WithEvents ContentsToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents IndexToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents SearchToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents toolStripSeparator5 As ToolStripSeparator
+    Friend WithEvents AboutToolStripMenuItem As ToolStripMenuItem
 End Class

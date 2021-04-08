@@ -1,5 +1,8 @@
 ﻿Public Class ProfilEmploye
-    Private Sub ProfilEmploye_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+
+    Private Sub MnItem_MonPortail_Click(sender As Object, e As EventArgs) Handles MnItem_MonPortail.Click
+        Me.Hide()
+        PortailEmploye.Show()
     End Sub
 End Class

@@ -170,6 +170,15 @@
     <EmbeddedResource Include="PortailClient.resx">
       <DependentUpon>PortailClient.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PortailEmploye.resx">
+      <DependentUpon>PortailEmploye.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfilClient.resx">
+      <DependentUpon>ProfilClient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfilEmploye.resx">
+      <DependentUpon>ProfilEmploye.vb</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="My Project\app.manifest" />

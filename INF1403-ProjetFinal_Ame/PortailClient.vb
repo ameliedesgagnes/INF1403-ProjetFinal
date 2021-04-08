@@ -24,4 +24,13 @@
         Me.Hide()
         LoginScreen.Show()
     End Sub
+
+
+
+    Private Sub MnItem_MonProfil_Click(sender As Object, e As EventArgs) Handles MnItem_MonProfil.Click
+        Me.Hide()
+        ProfilClient.Show()
+    End Sub
+
+
 End Class
