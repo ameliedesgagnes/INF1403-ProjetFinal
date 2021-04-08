@@ -60,10 +60,12 @@ Public Class NouveauContrat
         If modeConfig = True Then
             ContratsClient.TableauDonnees.SelectedRows(0).Cells(0).Value = TextboxID.Text
             ContratsClient.TableauDonnees.SelectedRows(0).Cells(1).Value = TextBoxCodeClient.Text
+            ContratsClient.TableauDonnees.SelectedRows(0).Cells(2).Value = DateTimePickerDateDébut.Value
+            ContratsClient.TableauDonnees.SelectedRows(0).Cells(3).Value = DateTimePickerDateFin.Value
             Me.Close()
             ContratsClient.Show()
         Else
-            ContratsClient.TableauDonnees.Rows.Add(TextboxID.Text, TextBoxCodeClient.Text)
+            ContratsClient.TableauDonnees.Rows.Add(TextboxID.Text, TextBoxCodeClient.Text, DateTimePickerDateDébut.Value, DateTimePickerDateFin.Value)
             ContratsClient.setIDs(TextboxID.Text, TextBoxCodeClient.Text)
             Me.Close()
             ContratsClient.Show()

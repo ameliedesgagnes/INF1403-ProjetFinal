@@ -30,8 +30,8 @@ Partial Class ProfilEmploye
         Me.Btn_ChangerInfoEmploye = New System.Windows.Forms.Button()
         Me.Btn_ChangerMDPEmploye = New System.Windows.Forms.Button()
         Me.MenuStripProfilEmploye = New System.Windows.Forms.MenuStrip()
-        Me.DéconnexionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MnItem_MonPortail = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MnItem_DeconnexionEmploye = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MnItem_MonPortailEmploye = New System.Windows.Forms.ToolStripMenuItem()
         Me.MnItem_Aide = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContentsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.IndexToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -116,7 +116,7 @@ Partial Class ProfilEmploye
         Me.MenuStripProfilEmploye.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.MenuStripProfilEmploye.Font = New System.Drawing.Font("Segoe UI", 11.25!)
         Me.MenuStripProfilEmploye.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStripProfilEmploye.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DéconnexionToolStripMenuItem, Me.MnItem_MonPortail, Me.MnItem_Aide})
+        Me.MenuStripProfilEmploye.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MnItem_DeconnexionEmploye, Me.MnItem_MonPortailEmploye, Me.MnItem_Aide})
         Me.MenuStripProfilEmploye.Location = New System.Drawing.Point(0, 0)
         Me.MenuStripProfilEmploye.Name = "MenuStripProfilEmploye"
         Me.MenuStripProfilEmploye.Padding = New System.Windows.Forms.Padding(12, 9, 12, 11)
@@ -125,22 +125,22 @@ Partial Class ProfilEmploye
         Me.MenuStripProfilEmploye.TabIndex = 17
         Me.MenuStripProfilEmploye.Text = "MenuStripProfilEmployer"
         '
-        'DéconnexionToolStripMenuItem
+        'MnItem_DeconnexionEmploye
         '
-        Me.DéconnexionToolStripMenuItem.ForeColor = System.Drawing.Color.Snow
-        Me.DéconnexionToolStripMenuItem.Name = "DéconnexionToolStripMenuItem"
-        Me.DéconnexionToolStripMenuItem.Size = New System.Drawing.Size(137, 29)
-        Me.DéconnexionToolStripMenuItem.Text = "Déconnexion"
+        Me.MnItem_DeconnexionEmploye.ForeColor = System.Drawing.Color.Snow
+        Me.MnItem_DeconnexionEmploye.Name = "MnItem_DeconnexionEmploye"
+        Me.MnItem_DeconnexionEmploye.Size = New System.Drawing.Size(137, 29)
+        Me.MnItem_DeconnexionEmploye.Text = "Déconnexion"
         '
-        'MnItem_MonPortail
+        'MnItem_MonPortailEmploye
         '
-        Me.MnItem_MonPortail.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold)
-        Me.MnItem_MonPortail.ForeColor = System.Drawing.Color.Snow
-        Me.MnItem_MonPortail.Name = "MnItem_MonPortail"
-        Me.MnItem_MonPortail.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.MnItem_MonPortail.RightToLeftAutoMirrorImage = True
-        Me.MnItem_MonPortail.Size = New System.Drawing.Size(132, 29)
-        Me.MnItem_MonPortail.Text = "Mon Portail"
+        Me.MnItem_MonPortailEmploye.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold)
+        Me.MnItem_MonPortailEmploye.ForeColor = System.Drawing.Color.Snow
+        Me.MnItem_MonPortailEmploye.Name = "MnItem_MonPortailEmploye"
+        Me.MnItem_MonPortailEmploye.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.MnItem_MonPortailEmploye.RightToLeftAutoMirrorImage = True
+        Me.MnItem_MonPortailEmploye.Size = New System.Drawing.Size(132, 29)
+        Me.MnItem_MonPortailEmploye.Text = "Mon Portail"
         '
         'MnItem_Aide
         '
@@ -154,30 +154,30 @@ Partial Class ProfilEmploye
         'ContentsToolStripMenuItem
         '
         Me.ContentsToolStripMenuItem.Name = "ContentsToolStripMenuItem"
-        Me.ContentsToolStripMenuItem.Size = New System.Drawing.Size(178, 30)
+        Me.ContentsToolStripMenuItem.Size = New System.Drawing.Size(224, 30)
         Me.ContentsToolStripMenuItem.Text = "&Contents"
         '
         'IndexToolStripMenuItem
         '
         Me.IndexToolStripMenuItem.Name = "IndexToolStripMenuItem"
-        Me.IndexToolStripMenuItem.Size = New System.Drawing.Size(178, 30)
+        Me.IndexToolStripMenuItem.Size = New System.Drawing.Size(224, 30)
         Me.IndexToolStripMenuItem.Text = "&Index"
         '
         'SearchToolStripMenuItem
         '
         Me.SearchToolStripMenuItem.Name = "SearchToolStripMenuItem"
-        Me.SearchToolStripMenuItem.Size = New System.Drawing.Size(178, 30)
+        Me.SearchToolStripMenuItem.Size = New System.Drawing.Size(224, 30)
         Me.SearchToolStripMenuItem.Text = "&Search"
         '
         'toolStripSeparator5
         '
         Me.toolStripSeparator5.Name = "toolStripSeparator5"
-        Me.toolStripSeparator5.Size = New System.Drawing.Size(175, 6)
+        Me.toolStripSeparator5.Size = New System.Drawing.Size(221, 6)
         '
         'AboutToolStripMenuItem
         '
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(178, 30)
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(224, 30)
         Me.AboutToolStripMenuItem.Text = "&About..."
         '
         'ProfilEmploye
@@ -209,8 +209,8 @@ Partial Class ProfilEmploye
     Friend WithEvents Btn_ChangerInfoEmploye As Button
     Friend WithEvents Btn_ChangerMDPEmploye As Button
     Friend WithEvents MenuStripProfilEmploye As MenuStrip
-    Friend WithEvents DéconnexionToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents MnItem_MonPortail As ToolStripMenuItem
+    Friend WithEvents MnItem_DeconnexionEmploye As ToolStripMenuItem
+    Friend WithEvents MnItem_MonPortailEmploye As ToolStripMenuItem
     Friend WithEvents MnItem_Aide As ToolStripMenuItem
     Friend WithEvents ContentsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents IndexToolStripMenuItem As ToolStripMenuItem

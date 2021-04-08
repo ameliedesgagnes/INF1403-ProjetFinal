@@ -34,8 +34,8 @@ Partial Class ProfilClient
         Me.Lb_TypeCompteClient = New System.Windows.Forms.Label()
         Me.Btn_ChangerInfoCLient = New System.Windows.Forms.Button()
         Me.MenuStripProfilClient = New System.Windows.Forms.MenuStrip()
-        Me.DéconnexionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MnItem_MonPortail = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MnItem_DeconnexionClient = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MnItem_MonPortailClient = New System.Windows.Forms.ToolStripMenuItem()
         Me.MnItem_Aide = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContentsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.IndexToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -160,7 +160,7 @@ Partial Class ProfilClient
         Me.MenuStripProfilClient.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.MenuStripProfilClient.Font = New System.Drawing.Font("Segoe UI", 11.25!)
         Me.MenuStripProfilClient.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStripProfilClient.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DéconnexionToolStripMenuItem, Me.MnItem_MonPortail, Me.MnItem_Aide})
+        Me.MenuStripProfilClient.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MnItem_DeconnexionClient, Me.MnItem_MonPortailClient, Me.MnItem_Aide})
         Me.MenuStripProfilClient.Location = New System.Drawing.Point(0, 0)
         Me.MenuStripProfilClient.Name = "MenuStripProfilClient"
         Me.MenuStripProfilClient.Padding = New System.Windows.Forms.Padding(12, 9, 12, 11)
@@ -169,22 +169,22 @@ Partial Class ProfilClient
         Me.MenuStripProfilClient.TabIndex = 12
         Me.MenuStripProfilClient.Text = "MenuStripMonProfilClient"
         '
-        'DéconnexionToolStripMenuItem
+        'MnItem_DeconnexionClient
         '
-        Me.DéconnexionToolStripMenuItem.ForeColor = System.Drawing.Color.Snow
-        Me.DéconnexionToolStripMenuItem.Name = "DéconnexionToolStripMenuItem"
-        Me.DéconnexionToolStripMenuItem.Size = New System.Drawing.Size(137, 29)
-        Me.DéconnexionToolStripMenuItem.Text = "Déconnexion"
+        Me.MnItem_DeconnexionClient.ForeColor = System.Drawing.Color.Snow
+        Me.MnItem_DeconnexionClient.Name = "MnItem_DeconnexionClient"
+        Me.MnItem_DeconnexionClient.Size = New System.Drawing.Size(137, 29)
+        Me.MnItem_DeconnexionClient.Text = "Déconnexion"
         '
-        'MnItem_MonPortail
+        'MnItem_MonPortailClient
         '
-        Me.MnItem_MonPortail.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold)
-        Me.MnItem_MonPortail.ForeColor = System.Drawing.Color.Snow
-        Me.MnItem_MonPortail.Name = "MnItem_MonPortail"
-        Me.MnItem_MonPortail.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.MnItem_MonPortail.RightToLeftAutoMirrorImage = True
-        Me.MnItem_MonPortail.Size = New System.Drawing.Size(132, 29)
-        Me.MnItem_MonPortail.Text = "Mon Portail"
+        Me.MnItem_MonPortailClient.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Bold)
+        Me.MnItem_MonPortailClient.ForeColor = System.Drawing.Color.Snow
+        Me.MnItem_MonPortailClient.Name = "MnItem_MonPortailClient"
+        Me.MnItem_MonPortailClient.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.MnItem_MonPortailClient.RightToLeftAutoMirrorImage = True
+        Me.MnItem_MonPortailClient.Size = New System.Drawing.Size(132, 29)
+        Me.MnItem_MonPortailClient.Text = "Mon Portail"
         '
         'MnItem_Aide
         '
@@ -262,8 +262,8 @@ Partial Class ProfilClient
     Friend WithEvents Lb_TypeCompteClient As Label
     Friend WithEvents Btn_ChangerInfoCLient As Button
     Friend WithEvents MenuStripProfilClient As MenuStrip
-    Friend WithEvents DéconnexionToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents MnItem_MonPortail As ToolStripMenuItem
+    Friend WithEvents MnItem_DeconnexionClient As ToolStripMenuItem
+    Friend WithEvents MnItem_MonPortailClient As ToolStripMenuItem
     Friend WithEvents MnItem_Aide As ToolStripMenuItem
     Friend WithEvents ContentsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents IndexToolStripMenuItem As ToolStripMenuItem
