@@ -22,319 +22,296 @@ Partial Class LoginScreen
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.txtfld_Username = New System.Windows.Forms.TextBox()
-        Me.txtfld_Password = New System.Windows.Forms.TextBox()
-        Me.btn_Connect = New System.Windows.Forms.Button()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
-        Me.lbl_Password = New System.Windows.Forms.Label()
-        Me.lbl_Username = New System.Windows.Forms.Label()
-        Me.pnl_NewUser = New System.Windows.Forms.Panel()
-        Me.LinkLabel3 = New System.Windows.Forms.LinkLabel()
-        Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
-        Me.btn_SignUp = New System.Windows.Forms.Button()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.txtfld_NomUtil = New System.Windows.Forms.TextBox()
+        Me.txtfld_MDPass = New System.Windows.Forms.TextBox()
+        Me.btn_Connection = New System.Windows.Forms.Button()
+        Me.pnl_Connexion = New System.Windows.Forms.Panel()
+        Me.link_Oubli = New System.Windows.Forms.LinkLabel()
+        Me.lbl_MDPass = New System.Windows.Forms.Label()
+        Me.lbl_Utilisateur = New System.Windows.Forms.Label()
+        Me.pnl_NvUtil = New System.Windows.Forms.Panel()
+        Me.link_Contact = New System.Windows.Forms.LinkLabel()
+        Me.link_Avantages = New System.Windows.Forms.LinkLabel()
+        Me.btn_Creation = New System.Windows.Forms.Button()
+        Me.lbl_NouvUtil = New System.Windows.Forms.Label()
+        Me.Lbl_Abonnet = New System.Windows.Forms.Label()
         Me.Pnl_Inscription = New System.Windows.Forms.Panel()
         Me.btn_Annuler = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.txtfld_NewPassCnf = New System.Windows.Forms.TextBox()
-        Me.txtfld_NewPass = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.txtfld_NewUser = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Panel1.SuspendLayout()
-        Me.pnl_NewUser.SuspendLayout()
+        Me.btn_SInscrire = New System.Windows.Forms.Button()
+        Me.lbl_NvMDPassCnf = New System.Windows.Forms.Label()
+        Me.txtfld_NvMDPassCnf = New System.Windows.Forms.TextBox()
+        Me.txtfld_NvMDPass = New System.Windows.Forms.TextBox()
+        Me.lbl_NvMDPass = New System.Windows.Forms.Label()
+        Me.txtfld_NvUtil = New System.Windows.Forms.TextBox()
+        Me.lbl_NvUtil = New System.Windows.Forms.Label()
+        Me.pnl_Connexion.SuspendLayout()
+        Me.pnl_NvUtil.SuspendLayout()
         Me.Pnl_Inscription.SuspendLayout()
         Me.SuspendLayout()
         '
-        'txtfld_Username
+        'txtfld_NomUtil
         '
-        Me.txtfld_Username.Location = New System.Drawing.Point(184, 54)
-        Me.txtfld_Username.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.txtfld_Username.Name = "txtfld_Username"
-        Me.txtfld_Username.Size = New System.Drawing.Size(223, 22)
-        Me.txtfld_Username.TabIndex = 0
+        Me.txtfld_NomUtil.Location = New System.Drawing.Point(138, 44)
+        Me.txtfld_NomUtil.Name = "txtfld_NomUtil"
+        Me.txtfld_NomUtil.Size = New System.Drawing.Size(168, 20)
+        Me.txtfld_NomUtil.TabIndex = 0
         '
-        'txtfld_Password
+        'txtfld_MDPass
         '
-        Me.txtfld_Password.Location = New System.Drawing.Point(184, 137)
-        Me.txtfld_Password.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.txtfld_Password.Name = "txtfld_Password"
-        Me.txtfld_Password.Size = New System.Drawing.Size(223, 22)
-        Me.txtfld_Password.TabIndex = 1
+        Me.txtfld_MDPass.Location = New System.Drawing.Point(138, 111)
+        Me.txtfld_MDPass.Name = "txtfld_MDPass"
+        Me.txtfld_MDPass.Size = New System.Drawing.Size(168, 20)
+        Me.txtfld_MDPass.TabIndex = 1
         '
-        'btn_Connect
+        'btn_Connection
         '
-        Me.btn_Connect.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_Connect.Location = New System.Drawing.Point(151, 260)
-        Me.btn_Connect.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.btn_Connect.Name = "btn_Connect"
-        Me.btn_Connect.Size = New System.Drawing.Size(156, 43)
-        Me.btn_Connect.TabIndex = 2
-        Me.btn_Connect.Text = "Connexion"
-        Me.btn_Connect.UseVisualStyleBackColor = True
+        Me.btn_Connection.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_Connection.Location = New System.Drawing.Point(113, 211)
+        Me.btn_Connection.Name = "btn_Connection"
+        Me.btn_Connection.Size = New System.Drawing.Size(117, 35)
+        Me.btn_Connection.TabIndex = 2
+        Me.btn_Connection.Text = "Connexion"
+        Me.btn_Connection.UseVisualStyleBackColor = True
         '
-        'Panel1
+        'Pnl_Connexion
         '
-        Me.Panel1.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.Panel1.Controls.Add(Me.LinkLabel1)
-        Me.Panel1.Controls.Add(Me.lbl_Password)
-        Me.Panel1.Controls.Add(Me.lbl_Username)
-        Me.Panel1.Controls.Add(Me.txtfld_Username)
-        Me.Panel1.Controls.Add(Me.btn_Connect)
-        Me.Panel1.Controls.Add(Me.txtfld_Password)
-        Me.Panel1.Location = New System.Drawing.Point(41, 118)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(477, 346)
-        Me.Panel1.TabIndex = 3
+        Me.pnl_Connexion.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.pnl_Connexion.Controls.Add(Me.link_Oubli)
+        Me.pnl_Connexion.Controls.Add(Me.lbl_MDPass)
+        Me.pnl_Connexion.Controls.Add(Me.lbl_Utilisateur)
+        Me.pnl_Connexion.Controls.Add(Me.txtfld_NomUtil)
+        Me.pnl_Connexion.Controls.Add(Me.btn_Connection)
+        Me.pnl_Connexion.Controls.Add(Me.txtfld_MDPass)
+        Me.pnl_Connexion.Location = New System.Drawing.Point(31, 96)
+        Me.pnl_Connexion.Name = "Pnl_Connexion"
+        Me.pnl_Connexion.Size = New System.Drawing.Size(358, 281)
+        Me.pnl_Connexion.TabIndex = 3
         '
-        'LinkLabel1
+        'link_Oubli
         '
-        Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.Location = New System.Drawing.Point(249, 165)
-        Me.LinkLabel1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(159, 17)
-        Me.LinkLabel1.TabIndex = 5
-        Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "Identifications oubliées?"
+        Me.link_Oubli.AutoSize = True
+        Me.link_Oubli.Location = New System.Drawing.Point(187, 134)
+        Me.link_Oubli.Name = "link_Oubli"
+        Me.link_Oubli.Size = New System.Drawing.Size(120, 13)
+        Me.link_Oubli.TabIndex = 5
+        Me.link_Oubli.TabStop = True
+        Me.link_Oubli.Text = "Identifications oubliées?"
         '
-        'lbl_Password
+        'lbl_MDPass
         '
-        Me.lbl_Password.AutoSize = True
-        Me.lbl_Password.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_Password.Location = New System.Drawing.Point(56, 142)
-        Me.lbl_Password.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lbl_Password.Name = "lbl_Password"
-        Me.lbl_Password.Size = New System.Drawing.Size(110, 20)
-        Me.lbl_Password.TabIndex = 4
-        Me.lbl_Password.Text = "Mot de passe"
+        Me.lbl_MDPass.AutoSize = True
+        Me.lbl_MDPass.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_MDPass.Location = New System.Drawing.Point(42, 115)
+        Me.lbl_MDPass.Name = "lbl_MDPass"
+        Me.lbl_MDPass.Size = New System.Drawing.Size(90, 16)
+        Me.lbl_MDPass.TabIndex = 4
+        Me.lbl_MDPass.Text = "Mot de passe"
         '
-        'lbl_Username
+        'lbl_Utilisateur
         '
-        Me.lbl_Username.AutoSize = True
-        Me.lbl_Username.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_Username.Location = New System.Drawing.Point(33, 54)
-        Me.lbl_Username.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lbl_Username.Name = "lbl_Username"
-        Me.lbl_Username.Size = New System.Drawing.Size(135, 20)
-        Me.lbl_Username.TabIndex = 3
-        Me.lbl_Username.Text = "Nom d'utilisateur"
+        Me.lbl_Utilisateur.AutoSize = True
+        Me.lbl_Utilisateur.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_Utilisateur.Location = New System.Drawing.Point(25, 44)
+        Me.lbl_Utilisateur.Name = "lbl_Utilisateur"
+        Me.lbl_Utilisateur.Size = New System.Drawing.Size(107, 16)
+        Me.lbl_Utilisateur.TabIndex = 3
+        Me.lbl_Utilisateur.Text = "Nom d'utilisateur"
         '
-        'pnl_NewUser
+        'pnl_NvUtil
         '
-        Me.pnl_NewUser.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.pnl_NewUser.Controls.Add(Me.LinkLabel3)
-        Me.pnl_NewUser.Controls.Add(Me.LinkLabel2)
-        Me.pnl_NewUser.Controls.Add(Me.btn_SignUp)
-        Me.pnl_NewUser.Controls.Add(Me.Label2)
-        Me.pnl_NewUser.Location = New System.Drawing.Point(544, 36)
-        Me.pnl_NewUser.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.pnl_NewUser.Name = "pnl_NewUser"
-        Me.pnl_NewUser.Size = New System.Drawing.Size(477, 224)
-        Me.pnl_NewUser.TabIndex = 4
+        Me.pnl_NvUtil.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.pnl_NvUtil.Controls.Add(Me.link_Contact)
+        Me.pnl_NvUtil.Controls.Add(Me.link_Avantages)
+        Me.pnl_NvUtil.Controls.Add(Me.btn_Creation)
+        Me.pnl_NvUtil.Controls.Add(Me.lbl_NouvUtil)
+        Me.pnl_NvUtil.Location = New System.Drawing.Point(408, 29)
+        Me.pnl_NvUtil.Name = "pnl_NvUtil"
+        Me.pnl_NvUtil.Size = New System.Drawing.Size(358, 182)
+        Me.pnl_NvUtil.TabIndex = 4
         '
-        'LinkLabel3
+        'link_Contact
         '
-        Me.LinkLabel3.AutoSize = True
-        Me.LinkLabel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel3.Location = New System.Drawing.Point(37, 111)
-        Me.LinkLabel3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.LinkLabel3.Name = "LinkLabel3"
-        Me.LinkLabel3.Size = New System.Drawing.Size(123, 20)
-        Me.LinkLabel3.TabIndex = 3
-        Me.LinkLabel3.TabStop = True
-        Me.LinkLabel3.Text = "Nous contacter"
+        Me.link_Contact.AutoSize = True
+        Me.link_Contact.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.link_Contact.Location = New System.Drawing.Point(28, 90)
+        Me.link_Contact.Name = "link_Contact"
+        Me.link_Contact.Size = New System.Drawing.Size(98, 16)
+        Me.link_Contact.TabIndex = 3
+        Me.link_Contact.TabStop = True
+        Me.link_Contact.Text = "Nous contacter"
         '
-        'LinkLabel2
+        'link_Avantages
         '
-        Me.LinkLabel2.AutoSize = True
-        Me.LinkLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel2.Location = New System.Drawing.Point(37, 59)
-        Me.LinkLabel2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.LinkLabel2.Name = "LinkLabel2"
-        Me.LinkLabel2.Size = New System.Drawing.Size(153, 20)
-        Me.LinkLabel2.TabIndex = 2
-        Me.LinkLabel2.TabStop = True
-        Me.LinkLabel2.Text = "Avantages Abonnet"
+        Me.link_Avantages.AutoSize = True
+        Me.link_Avantages.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.link_Avantages.Location = New System.Drawing.Point(28, 48)
+        Me.link_Avantages.Name = "link_Avantages"
+        Me.link_Avantages.Size = New System.Drawing.Size(126, 16)
+        Me.link_Avantages.TabIndex = 2
+        Me.link_Avantages.TabStop = True
+        Me.link_Avantages.Text = "Avantages Abonnet"
         '
-        'btn_SignUp
+        'btn_Creation
         '
-        Me.btn_SignUp.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_SignUp.Location = New System.Drawing.Point(300, 155)
-        Me.btn_SignUp.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.btn_SignUp.Name = "btn_SignUp"
-        Me.btn_SignUp.Size = New System.Drawing.Size(120, 39)
-        Me.btn_SignUp.TabIndex = 1
-        Me.btn_SignUp.Text = "S'inscrire"
-        Me.btn_SignUp.UseVisualStyleBackColor = True
+        Me.btn_Creation.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_Creation.Location = New System.Drawing.Point(225, 126)
+        Me.btn_Creation.Name = "btn_Creation"
+        Me.btn_Creation.Size = New System.Drawing.Size(90, 32)
+        Me.btn_Creation.TabIndex = 1
+        Me.btn_Creation.Text = "S'inscrire"
+        Me.btn_Creation.UseVisualStyleBackColor = True
         '
-        'Label2
+        'lbl_NouvUtil
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(36, 165)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(214, 29)
-        Me.Label2.TabIndex = 0
-        Me.Label2.Text = "Nouvel Utilisateur?"
+        Me.lbl_NouvUtil.AutoSize = True
+        Me.lbl_NouvUtil.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_NouvUtil.Location = New System.Drawing.Point(27, 134)
+        Me.lbl_NouvUtil.Name = "lbl_NouvUtil"
+        Me.lbl_NouvUtil.Size = New System.Drawing.Size(165, 24)
+        Me.lbl_NouvUtil.TabIndex = 0
+        Me.lbl_NouvUtil.Text = "Nouvel Utilisateur?"
         '
-        'Label1
+        'Lbl_Abonnet
         '
-        Me.Label1.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.Label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(41, 36)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(477, 78)
-        Me.Label1.TabIndex = 5
-        Me.Label1.Text = "ABONNET"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Lbl_Abonnet.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.Lbl_Abonnet.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Lbl_Abonnet.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lbl_Abonnet.Location = New System.Drawing.Point(31, 29)
+        Me.Lbl_Abonnet.Name = "Lbl_Abonnet"
+        Me.Lbl_Abonnet.Size = New System.Drawing.Size(358, 64)
+        Me.Lbl_Abonnet.TabIndex = 5
+        Me.Lbl_Abonnet.Text = "ABONNET"
+        Me.Lbl_Abonnet.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Pnl_Inscription
         '
         Me.Pnl_Inscription.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Pnl_Inscription.Controls.Add(Me.btn_Annuler)
-        Me.Pnl_Inscription.Controls.Add(Me.Button2)
-        Me.Pnl_Inscription.Controls.Add(Me.Label5)
-        Me.Pnl_Inscription.Controls.Add(Me.txtfld_NewPassCnf)
-        Me.Pnl_Inscription.Controls.Add(Me.txtfld_NewPass)
-        Me.Pnl_Inscription.Controls.Add(Me.Label4)
-        Me.Pnl_Inscription.Controls.Add(Me.txtfld_NewUser)
-        Me.Pnl_Inscription.Controls.Add(Me.Label3)
-        Me.Pnl_Inscription.Location = New System.Drawing.Point(544, 36)
-        Me.Pnl_Inscription.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Pnl_Inscription.Controls.Add(Me.btn_SInscrire)
+        Me.Pnl_Inscription.Controls.Add(Me.lbl_NvMDPassCnf)
+        Me.Pnl_Inscription.Controls.Add(Me.txtfld_NvMDPassCnf)
+        Me.Pnl_Inscription.Controls.Add(Me.txtfld_NvMDPass)
+        Me.Pnl_Inscription.Controls.Add(Me.lbl_NvMDPass)
+        Me.Pnl_Inscription.Controls.Add(Me.txtfld_NvUtil)
+        Me.Pnl_Inscription.Controls.Add(Me.lbl_NvUtil)
+        Me.Pnl_Inscription.Location = New System.Drawing.Point(408, 29)
         Me.Pnl_Inscription.Name = "Pnl_Inscription"
-        Me.Pnl_Inscription.Size = New System.Drawing.Size(477, 428)
+        Me.Pnl_Inscription.Size = New System.Drawing.Size(358, 348)
         Me.Pnl_Inscription.TabIndex = 6
         Me.Pnl_Inscription.Visible = False
         '
         'btn_Annuler
         '
         Me.btn_Annuler.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_Annuler.Location = New System.Drawing.Point(49, 342)
-        Me.btn_Annuler.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btn_Annuler.Location = New System.Drawing.Point(37, 278)
         Me.btn_Annuler.Name = "btn_Annuler"
-        Me.btn_Annuler.Size = New System.Drawing.Size(156, 43)
+        Me.btn_Annuler.Size = New System.Drawing.Size(117, 35)
         Me.btn_Annuler.TabIndex = 12
         Me.btn_Annuler.Text = "Annuler"
         Me.btn_Annuler.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btn_SInscrire
         '
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(264, 342)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(156, 43)
-        Me.Button2.TabIndex = 11
-        Me.Button2.Text = "S'inscrire!"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btn_SInscrire.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_SInscrire.Location = New System.Drawing.Point(198, 278)
+        Me.btn_SInscrire.Name = "btn_SInscrire"
+        Me.btn_SInscrire.Size = New System.Drawing.Size(117, 35)
+        Me.btn_SInscrire.TabIndex = 11
+        Me.btn_SInscrire.Text = "S'inscrire!"
+        Me.btn_SInscrire.UseVisualStyleBackColor = True
         '
-        'Label5
+        'lbl_NvMDPassCnf
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(37, 145)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(143, 20)
-        Me.Label5.TabIndex = 10
-        Me.Label5.Text = "(saisir à nouveau)"
+        Me.lbl_NvMDPassCnf.AutoSize = True
+        Me.lbl_NvMDPassCnf.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_NvMDPassCnf.Location = New System.Drawing.Point(28, 118)
+        Me.lbl_NvMDPassCnf.Name = "lbl_NvMDPassCnf"
+        Me.lbl_NvMDPassCnf.Size = New System.Drawing.Size(114, 16)
+        Me.lbl_NvMDPassCnf.TabIndex = 10
+        Me.lbl_NvMDPassCnf.Text = "(saisir à nouveau)"
         '
-        'txtfld_NewPassCnf
+        'txtfld_NvMDPassCnf
         '
-        Me.txtfld_NewPassCnf.Location = New System.Drawing.Point(213, 140)
-        Me.txtfld_NewPassCnf.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.txtfld_NewPassCnf.Name = "txtfld_NewPassCnf"
-        Me.txtfld_NewPassCnf.Size = New System.Drawing.Size(223, 22)
-        Me.txtfld_NewPassCnf.TabIndex = 9
+        Me.txtfld_NvMDPassCnf.Location = New System.Drawing.Point(160, 114)
+        Me.txtfld_NvMDPassCnf.Name = "txtfld_NvMDPassCnf"
+        Me.txtfld_NvMDPassCnf.Size = New System.Drawing.Size(168, 20)
+        Me.txtfld_NvMDPassCnf.TabIndex = 9
         '
-        'txtfld_NewPass
+        'txtfld_NvMDPass
         '
-        Me.txtfld_NewPass.Location = New System.Drawing.Point(213, 86)
-        Me.txtfld_NewPass.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.txtfld_NewPass.Name = "txtfld_NewPass"
-        Me.txtfld_NewPass.Size = New System.Drawing.Size(223, 22)
-        Me.txtfld_NewPass.TabIndex = 8
+        Me.txtfld_NvMDPass.Location = New System.Drawing.Point(160, 70)
+        Me.txtfld_NvMDPass.Name = "txtfld_NvMDPass"
+        Me.txtfld_NvMDPass.Size = New System.Drawing.Size(168, 20)
+        Me.txtfld_NvMDPass.TabIndex = 8
         '
-        'Label4
+        'lbl_NvMDPass
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(37, 91)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(110, 20)
-        Me.Label4.TabIndex = 6
-        Me.Label4.Text = "Mot de passe"
+        Me.lbl_NvMDPass.AutoSize = True
+        Me.lbl_NvMDPass.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_NvMDPass.Location = New System.Drawing.Point(28, 74)
+        Me.lbl_NvMDPass.Name = "lbl_NvMDPass"
+        Me.lbl_NvMDPass.Size = New System.Drawing.Size(90, 16)
+        Me.lbl_NvMDPass.TabIndex = 6
+        Me.lbl_NvMDPass.Text = "Mot de passe"
         '
-        'txtfld_NewUser
+        'txtfld_NvUtil
         '
-        Me.txtfld_NewUser.Location = New System.Drawing.Point(213, 34)
-        Me.txtfld_NewUser.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.txtfld_NewUser.Name = "txtfld_NewUser"
-        Me.txtfld_NewUser.Size = New System.Drawing.Size(223, 22)
-        Me.txtfld_NewUser.TabIndex = 7
+        Me.txtfld_NvUtil.Location = New System.Drawing.Point(160, 28)
+        Me.txtfld_NvUtil.Name = "txtfld_NvUtil"
+        Me.txtfld_NvUtil.Size = New System.Drawing.Size(168, 20)
+        Me.txtfld_NvUtil.TabIndex = 7
         '
-        'Label3
+        'lbl_NvUtil
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(37, 39)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(135, 20)
-        Me.Label3.TabIndex = 6
-        Me.Label3.Text = "Nom d'utilisateur"
+        Me.lbl_NvUtil.AutoSize = True
+        Me.lbl_NvUtil.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_NvUtil.Location = New System.Drawing.Point(28, 32)
+        Me.lbl_NvUtil.Name = "lbl_NvUtil"
+        Me.lbl_NvUtil.Size = New System.Drawing.Size(107, 16)
+        Me.lbl_NvUtil.TabIndex = 6
+        Me.lbl_NvUtil.Text = "Nom d'utilisateur"
         '
         'LoginScreen
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1067, 554)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.pnl_NewUser)
-        Me.Controls.Add(Me.Panel1)
+        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Lbl_Abonnet)
+        Me.Controls.Add(Me.pnl_NvUtil)
+        Me.Controls.Add(Me.pnl_Connexion)
         Me.Controls.Add(Me.Pnl_Inscription)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "LoginScreen"
         Me.Text = "LoginScreen"
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
-        Me.pnl_NewUser.ResumeLayout(False)
-        Me.pnl_NewUser.PerformLayout()
+        Me.pnl_Connexion.ResumeLayout(False)
+        Me.pnl_Connexion.PerformLayout()
+        Me.pnl_NvUtil.ResumeLayout(False)
+        Me.pnl_NvUtil.PerformLayout()
         Me.Pnl_Inscription.ResumeLayout(False)
         Me.Pnl_Inscription.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents txtfld_Username As TextBox
-    Friend WithEvents txtfld_Password As TextBox
-    Friend WithEvents btn_Connect As Button
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents lbl_Password As Label
-    Friend WithEvents lbl_Username As Label
-    Friend WithEvents pnl_NewUser As Panel
-    Friend WithEvents LinkLabel1 As LinkLabel
-    Friend WithEvents Label1 As Label
-    Friend WithEvents btn_SignUp As Button
-    Friend WithEvents Label2 As Label
-    Friend WithEvents LinkLabel3 As LinkLabel
-    Friend WithEvents LinkLabel2 As LinkLabel
+    Friend WithEvents txtfld_NomUtil As TextBox
+    Friend WithEvents txtfld_MDPass As TextBox
+    Friend WithEvents btn_Connection As Button
+    Friend WithEvents pnl_Connexion As Panel
+    Friend WithEvents lbl_MDPass As Label
+    Friend WithEvents lbl_Utilisateur As Label
+    Friend WithEvents pnl_NvUtil As Panel
+    Friend WithEvents link_Oubli As LinkLabel
+    Friend WithEvents Lbl_Abonnet As Label
+    Friend WithEvents btn_Creation As Button
+    Friend WithEvents lbl_NouvUtil As Label
+    Friend WithEvents link_Contact As LinkLabel
+    Friend WithEvents link_Avantages As LinkLabel
     Friend WithEvents Pnl_Inscription As Panel
-    Friend WithEvents Label5 As Label
-    Friend WithEvents txtfld_NewPassCnf As TextBox
-    Friend WithEvents txtfld_NewPass As TextBox
-    Friend WithEvents Label4 As Label
-    Friend WithEvents txtfld_NewUser As TextBox
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Button2 As Button
+    Friend WithEvents lbl_NvMDPassCnf As Label
+    Friend WithEvents txtfld_NvMDPassCnf As TextBox
+    Friend WithEvents txtfld_NvMDPass As TextBox
+    Friend WithEvents lbl_NvMDPass As Label
+    Friend WithEvents txtfld_NvUtil As TextBox
+    Friend WithEvents lbl_NvUtil As Label
+    Friend WithEvents btn_SInscrire As Button
     Friend WithEvents btn_Annuler As Button
 End Class
