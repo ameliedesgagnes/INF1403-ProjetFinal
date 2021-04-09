@@ -171,7 +171,7 @@ Partial Class PortailEmploye
         Me.Controls.Add(Me.Btn_Formation)
         Me.Controls.Add(Me.Btn_GestionContrat)
         Me.Name = "PortailEmploye"
-        Me.Text = "PortailClient"
+        Me.Text = "PortailEmploye"
         Me.MenuStripPortailEmploye.ResumeLayout(False)
         Me.MenuStripPortailEmploye.PerformLayout()
         Me.ResumeLayout(False)

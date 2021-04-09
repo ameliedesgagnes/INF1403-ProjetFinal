@@ -3,8 +3,10 @@
 
 
     'Ouvre la form ContratEmploye (pour l'employer) et ferme la page actuelle 
+    '(pour le prototype nous avons repris le contratClient juste pour démontrait à quoi ça pourrait ressembler dans une version finale)
     Private Sub Btn_GestionContrat_Click(sender As Object, e As EventArgs) Handles Btn_GestionContrat.Click
         Me.Hide()
+        MessageBox.Show("Option dédié au Prototype (temporaire et possible de changement dans de futur version pour amélioration)")
         ContratsClient.Show()
     End Sub
 

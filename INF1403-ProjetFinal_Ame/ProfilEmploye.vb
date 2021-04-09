@@ -22,5 +22,11 @@
     End Sub
 
 
+    'Déconnecte l'employe, ferme la page actuelle et affiche la page de Login (le loginScreen)
+    Private Sub MnItem_DeconnexionEmploye_Click(sender As Object, e As EventArgs) Handles MnItem_DeconnexionEmploye.Click
+        Me.Hide()
+        LoginScreen.Show()
+    End Sub
+
 
 End Class

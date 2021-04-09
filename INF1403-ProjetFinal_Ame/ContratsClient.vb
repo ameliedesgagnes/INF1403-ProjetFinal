@@ -48,7 +48,7 @@
     Private Sub Btn_Modifier_Click(sender As Object, e As EventArgs) Handles Btn_Modifier.Click
         'Si aucune ligne n'est sélectionnée, demander à l'utilisateur de sélectionner une ligne'
         If TableauDonnees.SelectedRows.Count = 0 Then
-            MsgBox("Assurez-vous de sélectionner un contrat!")
+            MessageBox.Show("Assurez-vous de sélectionner un contrat!")
             'Sinon cacher l'écran actuelle et montrer le formulaire nouveauContrat et insérer les données de la ligne sélectionnée'
         Else
             Me.Hide()
@@ -61,14 +61,15 @@
 
     'Supression d'un contrat du tableau de données'
     Private Sub Btn_Resilier_Click(sender As Object, e As EventArgs) Handles Btn_Resilier.Click
-        If (TableauDonnees.SelectedRows(0).Cells(0).Selected = True) Then
-            'Confirmer avec l'utilisateur la supression d'un contrat'
+        'Si aucune ligne n'est sélectionnée, demander à l'utilisateur de sélectionner une ligne'
+        If TableauDonnees.SelectedRows.Count = 0 Then
+            MessageBox.Show("Veuillez sélectionner un contrat et réappuyer sur le bouton Résilier")
+        Else
+            'Sinon confirmer avec l'utilisateur la supression d'un contrat et supprimer le contrat s'il confirme OUI
             Select Case MsgBox("Êtes-vous certain de vouloir supprimer le contrat sélectionné?", MsgBoxStyle.YesNo, "Attention!")
                 Case MsgBoxResult.Yes
                     TableauDonnees.Rows.RemoveAt(TableauDonnees.SelectedRows(0).Index)
             End Select
-        Else
-            MessageBox.Show("Veuillez sélectionner un contrat et réappuyer sur le bouton Résilier")
         End If
     End Sub
 
@@ -77,4 +78,12 @@
         Me.Hide()
         PortailClient.Show()
     End Sub
+
+
+    'Affiche la page MonProfilClient et ferme la page actuelle 
+    Private Sub MnItem_MonProfil_Click(sender As Object, e As EventArgs) Handles MnItem_MonProfil.Click
+        Me.Hide()
+        ProfilClient.Show()
+    End Sub
+
 End Class

@@ -154,30 +154,30 @@ Partial Class ProfilEmploye
         'ContentsToolStripMenuItem
         '
         Me.ContentsToolStripMenuItem.Name = "ContentsToolStripMenuItem"
-        Me.ContentsToolStripMenuItem.Size = New System.Drawing.Size(224, 30)
+        Me.ContentsToolStripMenuItem.Size = New System.Drawing.Size(178, 30)
         Me.ContentsToolStripMenuItem.Text = "&Contents"
         '
         'IndexToolStripMenuItem
         '
         Me.IndexToolStripMenuItem.Name = "IndexToolStripMenuItem"
-        Me.IndexToolStripMenuItem.Size = New System.Drawing.Size(224, 30)
+        Me.IndexToolStripMenuItem.Size = New System.Drawing.Size(178, 30)
         Me.IndexToolStripMenuItem.Text = "&Index"
         '
         'SearchToolStripMenuItem
         '
         Me.SearchToolStripMenuItem.Name = "SearchToolStripMenuItem"
-        Me.SearchToolStripMenuItem.Size = New System.Drawing.Size(224, 30)
+        Me.SearchToolStripMenuItem.Size = New System.Drawing.Size(178, 30)
         Me.SearchToolStripMenuItem.Text = "&Search"
         '
         'toolStripSeparator5
         '
         Me.toolStripSeparator5.Name = "toolStripSeparator5"
-        Me.toolStripSeparator5.Size = New System.Drawing.Size(221, 6)
+        Me.toolStripSeparator5.Size = New System.Drawing.Size(175, 6)
         '
         'AboutToolStripMenuItem
         '
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(224, 30)
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(178, 30)
         Me.AboutToolStripMenuItem.Text = "&About..."
         '
         'ProfilEmploye
