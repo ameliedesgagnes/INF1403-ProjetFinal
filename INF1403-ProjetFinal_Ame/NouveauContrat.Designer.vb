@@ -74,7 +74,7 @@ Partial Class NouveauContrat
         '
         Me.ComboBoxForfait.FormattingEnabled = True
         Me.ComboBoxForfait.Location = New System.Drawing.Point(190, 112)
-        Me.ComboBoxForfait.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ComboBoxForfait.Margin = New System.Windows.Forms.Padding(2)
         Me.ComboBoxForfait.Name = "ComboBoxForfait"
         Me.ComboBoxForfait.Size = New System.Drawing.Size(166, 21)
         Me.ComboBoxForfait.TabIndex = 3
@@ -83,7 +83,7 @@ Partial Class NouveauContrat
         '
         Me.ComboBoxLocation.FormattingEnabled = True
         Me.ComboBoxLocation.Location = New System.Drawing.Point(189, 242)
-        Me.ComboBoxLocation.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ComboBoxLocation.Margin = New System.Windows.Forms.Padding(2)
         Me.ComboBoxLocation.Name = "ComboBoxLocation"
         Me.ComboBoxLocation.Size = New System.Drawing.Size(167, 21)
         Me.ComboBoxLocation.TabIndex = 4
@@ -91,7 +91,7 @@ Partial Class NouveauContrat
         'Btn_ajouter
         '
         Me.Btn_ajouter.Location = New System.Drawing.Point(21, 513)
-        Me.Btn_ajouter.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Btn_ajouter.Margin = New System.Windows.Forms.Padding(2)
         Me.Btn_ajouter.Name = "Btn_ajouter"
         Me.Btn_ajouter.Size = New System.Drawing.Size(135, 36)
         Me.Btn_ajouter.TabIndex = 5
@@ -112,7 +112,7 @@ Partial Class NouveauContrat
         '
         Me.ComboBoxDuree.FormattingEnabled = True
         Me.ComboBoxDuree.Location = New System.Drawing.Point(189, 274)
-        Me.ComboBoxDuree.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ComboBoxDuree.Margin = New System.Windows.Forms.Padding(2)
         Me.ComboBoxDuree.Name = "ComboBoxDuree"
         Me.ComboBoxDuree.Size = New System.Drawing.Size(167, 21)
         Me.ComboBoxDuree.TabIndex = 7
@@ -121,7 +121,7 @@ Partial Class NouveauContrat
         '
         Me.ComboBoxPaiement.FormattingEnabled = True
         Me.ComboBoxPaiement.Location = New System.Drawing.Point(191, 322)
-        Me.ComboBoxPaiement.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ComboBoxPaiement.Margin = New System.Windows.Forms.Padding(2)
         Me.ComboBoxPaiement.Name = "ComboBoxPaiement"
         Me.ComboBoxPaiement.Size = New System.Drawing.Size(165, 21)
         Me.ComboBoxPaiement.TabIndex = 17
@@ -139,7 +139,7 @@ Partial Class NouveauContrat
         'TextBoxCodeClient
         '
         Me.TextBoxCodeClient.Location = New System.Drawing.Point(187, 57)
-        Me.TextBoxCodeClient.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBoxCodeClient.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBoxCodeClient.Name = "TextBoxCodeClient"
         Me.TextBoxCodeClient.Size = New System.Drawing.Size(169, 20)
         Me.TextBoxCodeClient.TabIndex = 11
@@ -158,7 +158,7 @@ Partial Class NouveauContrat
         '
         Me.TextboxID.CausesValidation = False
         Me.TextboxID.Location = New System.Drawing.Point(187, 29)
-        Me.TextboxID.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextboxID.Margin = New System.Windows.Forms.Padding(2)
         Me.TextboxID.Name = "TextboxID"
         Me.TextboxID.Size = New System.Drawing.Size(169, 20)
         Me.TextboxID.TabIndex = 21
@@ -227,7 +227,7 @@ Partial Class NouveauContrat
         '
         Me.RadioButtonAnnuel.AutoSize = True
         Me.RadioButtonAnnuel.Location = New System.Drawing.Point(212, 376)
-        Me.RadioButtonAnnuel.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButtonAnnuel.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButtonAnnuel.Name = "RadioButtonAnnuel"
         Me.RadioButtonAnnuel.Size = New System.Drawing.Size(58, 17)
         Me.RadioButtonAnnuel.TabIndex = 29
@@ -239,7 +239,7 @@ Partial Class NouveauContrat
         '
         Me.RadioButtonMensuel.AutoSize = True
         Me.RadioButtonMensuel.Location = New System.Drawing.Point(84, 376)
-        Me.RadioButtonMensuel.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RadioButtonMensuel.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButtonMensuel.Name = "RadioButtonMensuel"
         Me.RadioButtonMensuel.Size = New System.Drawing.Size(65, 17)
         Me.RadioButtonMensuel.TabIndex = 30
@@ -260,7 +260,7 @@ Partial Class NouveauContrat
         'DateTimePickerDateDébut
         '
         Me.DateTimePickerDateDébut.Location = New System.Drawing.Point(152, 143)
-        Me.DateTimePickerDateDébut.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DateTimePickerDateDébut.Margin = New System.Windows.Forms.Padding(2)
         Me.DateTimePickerDateDébut.Name = "DateTimePickerDateDébut"
         Me.DateTimePickerDateDébut.Size = New System.Drawing.Size(204, 20)
         Me.DateTimePickerDateDébut.TabIndex = 32
@@ -268,7 +268,7 @@ Partial Class NouveauContrat
         'DateTimePickerDateFin
         '
         Me.DateTimePickerDateFin.Location = New System.Drawing.Point(152, 175)
-        Me.DateTimePickerDateFin.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DateTimePickerDateFin.Margin = New System.Windows.Forms.Padding(2)
         Me.DateTimePickerDateFin.Name = "DateTimePickerDateFin"
         Me.DateTimePickerDateFin.Size = New System.Drawing.Size(204, 20)
         Me.DateTimePickerDateFin.TabIndex = 33
@@ -296,7 +296,7 @@ Partial Class NouveauContrat
         'ButtonCancel
         '
         Me.ButtonCancel.Location = New System.Drawing.Point(239, 513)
-        Me.ButtonCancel.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ButtonCancel.Margin = New System.Windows.Forms.Padding(2)
         Me.ButtonCancel.Name = "ButtonCancel"
         Me.ButtonCancel.Size = New System.Drawing.Size(135, 36)
         Me.ButtonCancel.TabIndex = 36
@@ -334,7 +334,7 @@ Partial Class NouveauContrat
         Me.Controls.Add(Me.ComboBoxForfait)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "NouveauContrat"
         Me.Text = "Info contrat"
         Me.ResumeLayout(False)
